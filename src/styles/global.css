@@ -1,27 +1,9 @@
 @tailwind base;
 
-@tailwind components;
-
-@tailwind utilities;
-
-.positions {
-  bottom: 105px;
-  left: -270px;
-  right: -270px;
-}
-
 .hero-height {
   height: 90vh;
 }
 
-.h-40vh {
-  height: 95vh;
-}
+@tailwind components;
 
-.rounded-br-xl {
-  border-bottom-right-radius: 50% 25%;
-}
-
-.rounded-bl-xl {
-  border-bottom-left-radius: 50% 25%;
-}
+@tailwind utilities;

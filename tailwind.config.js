@@ -1,11 +1,45 @@
 module.exports = {
-  purge: [],
+  purge: ["./src/**/*.js"],
   theme: {
-    zIndex: {
-      "-1": "-1",
+    maxWidth: {
+      "1/4": "25%",
+      "1/2": "50%",
+      "3/4": "75%",
+    },
+    height: {
+      "40vh": "40vh",
+      "50vh": "50vh",
+      "60vh": "60vh",
+      "70vh": "70vh",
+      "70p": "70%",
+      "80vh": "80vh",
+      "85vh": "85vh",
+      "90vh": "90vh",
+      "90p": "90%",
+      "95vh": "95vh",
+    },
+    fontFamily: {
+      sans: [
+        "Inter",
+        "system-ui",
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "Segoe UI",
+        "Roboto",
+        "Helvetica Neue",
+        "Arial",
+        "Noto Sans",
+        "sans-serif",
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji",
+      ],
     },
     extend: {},
   },
-  variants: {},
+  variants: {
+    fontFamily: ["responsive", "hover", "focus"],
+  },
   plugins: [],
 }
