@@ -3,6 +3,9 @@
 .hero-height {
   height: 90vh;
 }
+.markdown > * {
+  margin-top: 1.5rem;
+}
 
 @tailwind components;
 
