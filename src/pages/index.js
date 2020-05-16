@@ -6,7 +6,7 @@ import Hero from "../components/hero"
 
 const IndexPage = () => (
   <>
-    <Layout>
+    <Layout hidebg={false}>
       <SEO title="Home"></SEO>
       <Hero />
       <div className="mt-6 sm:mt-16  lg:mt-8 flex flex-col">

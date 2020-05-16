@@ -12,11 +12,15 @@ import Footer from "./footer"
 
 // import { useStaticQuery, graphql } from "gatsby"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, hidebg = true }) => {
   return (
     <>
       <div className="font-sans bg-white h-screen relative overflow-auto  ">
-        <div className="bg-gray-100 border-b-2 absolute inset-0 h-70vh lg:h-90vh transform skew-y-3 origin-top-right "></div>
+        <div
+          className={` ${
+            hidebg ? "hidden" : "block"
+          } bg-gray-100 border-b-2 absolute inset-0 h-70vh lg:h-90vh transform skew-y-3 origin-top-right`}
+        ></div>
         <div className="container mx-auto px-8 bg-transparent relative z-1000">
           <Header />
           {children}
