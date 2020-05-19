@@ -7,10 +7,14 @@ const Footer = () => (
       <div className="w-full sm:w-1/4">
         <h3 className="text-xl font-semibold text-gray-600">Links</h3>
         <ul className="mt-4">
-          <li className="hover:text-indigo-400">Accounting & Consulting</li>
-          <li className="hover:text-indigo-400">Contact us</li>
-          <li className="hover:text-indigo-400">About us</li>
-          <li className="hover:text-indigo-400">Social responsability</li>
+          <li className="hover:text-indigo-400 cursor-pointer">
+            Accounting & Consulting
+          </li>
+          <li className="hover:text-indigo-400 cursor-pointer">Contact us</li>
+          <li className="hover:text-indigo-400 cursor-pointer">About us</li>
+          <li className="hover:text-indigo-400 cursor-pointer">
+            Social responsability
+          </li>
         </ul>
       </div>
       <div className="mt-6 sm:mt-0">
@@ -32,7 +36,7 @@ const Footer = () => (
                 <label>Fax: </label>
                 <a
                   className="text-indigo-400 underline"
-                  hrel="fax:+01-888-909-6350"
+                  href="fax:+01-888-909-6350"
                 >
                   +01-888-909-6350
                 </a>
@@ -72,7 +76,7 @@ const Footer = () => (
                 <label>Fax: </label>
                 <a
                   className="text-indigo-400 underline"
-                  hrel="fax:+01-888-421-2309"
+                  href="fax:+01-888-421-2309"
                 >
                   +01-888-421-2309
                 </a>
