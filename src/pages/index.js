@@ -9,18 +9,18 @@ const IndexPage = () => (
     <Layout hidebg={false}>
       <SEO title="Home"></SEO>
       <Hero />
-      <div className="mt-6 sm:mt-16  lg:mt-8 flex flex-col">
+      <div className="flex flex-col">
         <div className="sm:max-w-1/2 md:max-w-3/4 py-2">
           <h2 className="font-semibold text-2xl sm:text-4xl tracking-tight text-gray-700 ">
             Quality & Accurate
             <span className="block">tax preparation services.</span>
           </h2>
-          <div className="mt-4 markdown text-gray-600 text-lg ">
+          <div className="mt-4 markdown text-gray-600 text-lg md:text-xl  ">
             <p>
               We’ve developed a way for you to get it done by a CFE
               Professional. With over 20 years in winning income tax strategies
               that yield the most accurate refund possible in addition to
-              reducing the tax liability for our clients.{" "}
+              reducing the tax liability for our clients.
             </p>
             <p>
               We offer access to trained and experienced tax preparers year
@@ -31,7 +31,7 @@ const IndexPage = () => (
           </div>
         </div>
 
-        <div className="sm:self-end sm:max-w-1/2 md:max-w-3/4  mt-16 sm:mt-20 markdown text-gray-600 text-lg">
+        <div className="sm:self-end sm:max-w-1/2 md:max-w-3/4  mt-16 sm:mt-20 markdown text-gray-600 text-lg md:text-xl">
           <h2 className="font-semibold text-2xl sm:text-4xl tracking-tight text-gray-700">
             Get the most out of your taxes
           </h2>
@@ -50,7 +50,7 @@ const IndexPage = () => (
         </div>
       </div>
 
-      <div className=" mt-16 sm:mt-20 markdown text-gray-600 text-lg">
+      <div className=" mt-16 sm:mt-20 markdown text-gray-600 text-lg md:text-xl">
         <h2 className="font-semibold text-2xl sm:text-4xl tracking-tight text-gray-700">
           File with us
         </h2>
@@ -75,13 +75,13 @@ const IndexPage = () => (
               Gain access to qualified and certified CPAs.
             </p>
             <p className="sm:max-w-1/4">
-              <span className=" font-semibold text-2xl text-indigo-400 mr-1">
-                02.{" "}
+              <span className="font-semibold text-2xl text-indigo-400 mr-1">
+                02.
               </span>
               Get a price for your specific needs.
             </p>
             <p className="sm:max-w-1/4">
-              <span className=" font-semibold text-2xl text-indigo-400 mr-1">
+              <span className="font-semibold text-2xl text-indigo-400 mr-1">
                 03.
               </span>
               Email, scan, or fax your W2 to our office and we can file your

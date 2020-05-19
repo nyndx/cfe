@@ -11,11 +11,10 @@ module.exports = {
       "50vh": "50vh",
       "60vh": "60vh",
       "70vh": "70vh",
-      "70p": "70%",
+      "75vh": "70vh",
       "80vh": "80vh",
       "85vh": "85vh",
       "90vh": "90vh",
-      "90p": "90%",
       "95vh": "95vh",
     },
     fontFamily: {
