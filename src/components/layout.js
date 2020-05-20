@@ -19,11 +19,11 @@ const Layout = ({ children, hidebg = true }) => {
         <div
           className={` ${
             hidebg ? "hidden" : "block"
-          } bg-gray-100 border-b-2 absolute inset-0 h-80vh lg:h-95vh transform skew-y-3 origin-top-right`}
+          } bg-gray-100 border-b-2 absolute inset-0 h-29rem sm:h-46rem transform skew-y-3 origin-top-right`}
         ></div>
-        <div className="container mx-auto px-8 bg-transparent relative z-1000">
+        <div className="container mx-auto px-4 sm:px-8 bg-transparent relative z-1000">
           <Header />
-          {children}
+          <div>{children}</div>
           <Footer />
         </div>
       </div>

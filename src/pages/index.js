@@ -9,7 +9,7 @@ const IndexPage = () => (
     <Layout hidebg={false}>
       <SEO title="Home"></SEO>
       <Hero />
-      <div className="flex flex-col">
+      <div className="mt-20 sm:mt-16 flex flex-col">
         <div className="sm:max-w-1/2 md:max-w-3/4 py-2">
           <h2 className="font-semibold text-2xl sm:text-4xl tracking-tight text-gray-700 ">
             Quality & Accurate
