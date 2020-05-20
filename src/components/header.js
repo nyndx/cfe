@@ -13,7 +13,12 @@ const Header = () => (
     <nav className="hidden sm:block sm:flex items-center text-base md:text-lg">
       <a href="#" className="block pr-2">
         <span className=" pb-2 text-gray-600 font-medium hover:text-gray-700 hover:border-b-2 hover:border-solid hover:border-indigo-400 hover:font-semibold ml-2">
-          Accounting & Consulting
+          Accounting
+        </span>
+      </a>
+      <a href="#" className="block pr-2">
+        <span className=" pb-2 text-gray-600 font-medium hover:text-gray-700 hover:border-b-2 hover:border-solid hover:border-indigo-400 hover:font-semibold ml-2">
+          Consulting
         </span>
       </a>
       <a href="#" className="block px-2 ">
