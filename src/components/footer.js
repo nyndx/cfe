@@ -8,16 +8,6 @@ const Footer = () => (
       <div className="w-full sm:w-1/4 mr-6">
         <h3 className="text-xl font-semibold text-gray-600">Links</h3>
         <ul className="mt-4">
-<<<<<<< HEAD
-          <li className="hover:text-indigo-400 cursor-pointer">
-            Accounting & Consulting
-          </li>
-          <li className="hover:text-indigo-400 cursor-pointer">Contact us</li>
-          <li className="hover:text-indigo-400 cursor-pointer">About us</li>
-          <li className="hover:text-indigo-400 cursor-pointer">
-            Social responsability
-          </li>
-=======
           <Link to="/accounting">
             <li className="hover:text-indigo-400">Accounting </li>
           </Link>
@@ -33,7 +23,6 @@ const Footer = () => (
           <Link to="/social">
             <li className="hover:text-indigo-400">Social responsibility</li>
           </Link>
->>>>>>> development
         </ul>
       </div>
       <div className="mt-6 sm:mt-0">
@@ -57,10 +46,7 @@ const Footer = () => (
                 <a
                   className="text-indigo-400 underline"
                   href="fax:+01-888-909-6350"
-<<<<<<< HEAD
-=======
                   name="Fax"
->>>>>>> development
                 >
                   +01-888-909-6350
                 </a>
@@ -104,7 +90,7 @@ const Footer = () => (
                 <a
                   className="text-indigo-400 underline"
                   href="fax:+01-888-421-2309"
-                  name='Fax'
+                  name="Fax"
                 >
                   +01-888-421-2309
                 </a>
