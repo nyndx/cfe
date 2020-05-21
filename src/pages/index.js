@@ -9,7 +9,7 @@ const IndexPage = () => (
     <Layout hidebg={false}>
       <SEO title="Home"></SEO>
       <Hero />
-      <div className="mt-20 sm:mt-16 flex flex-col">
+      <div className="mt-32 md:mt-20 flex flex-col">
         <div className="sm:max-w-1/2 md:max-w-3/4 py-2">
           <h2 className="font-semibold text-2xl sm:text-4xl tracking-tight text-gray-700 ">
             Quality & Accurate
@@ -44,7 +44,7 @@ const IndexPage = () => (
           <p className="">
             This year, try accurate results and financial peace of mind. -
             <span className="text-base pb-1 border-b-2 border-indigo-400 font-semibold">
-              <Link to="">Try a CFE Professional.</Link>
+              <Link to="/contact">Try a CFE Professional.</Link>
             </span>
           </p>
         </div>
@@ -90,7 +90,7 @@ const IndexPage = () => (
           </div>
           <div className="mt-6">
             <span className="text-indigo-400 hover:text-indigo-500 text-xl pb-1 border-b-2 border-indigo-400 font-semibold">
-              <Link to="">File here</Link>
+              <Link to="/contact">File here</Link>
             </span>
           </div>
         </div>
