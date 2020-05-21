@@ -104,6 +104,7 @@ const Footer = () => (
                 <a
                   className="text-indigo-400 underline"
                   href="fax:+01-888-421-2309"
+                  name='Fax'
                 >
                   +01-888-421-2309
                 </a>
