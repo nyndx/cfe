@@ -19,6 +19,23 @@
   transform: skewY(6deg);
   transform-origin: top right;
 }
+.indigo-bg {
+  background: rgb(127, 156, 245);
+  background: linear-gradient(
+    0deg,
+    rgba(127, 156, 245, 1) 20%,
+    rgba(195, 218, 254, 1) 80%
+  );
+}
+
+.indigo-bg-radial {
+  background: rgb(127, 156, 245);
+  background: radial-gradient(
+    circle,
+    rgba(127, 156, 245, 1) 20%,
+    rgba(195, 218, 254, 1) 80%
+  );
+}
 
 @tailwind components;
 
