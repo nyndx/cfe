@@ -6,7 +6,11 @@ const Consulting = () => (
   <>
     <Layout>
       <SEO title="Consulting" />
-      <div className="h-60rem ">Consulting</div>
+      <div className="h-60rem ">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl tracking-tight font-bold">
+          Consulting
+        </h1>
+      </div>
     </Layout>
   </>
 )

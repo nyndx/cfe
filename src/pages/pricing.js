@@ -2,17 +2,17 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const Aboutus = () => (
+const Pricing = () => (
   <>
     <Layout>
-      <SEO title="About Us" />
+      <SEO title="Pricing" />
       <div className="h-60rem ">
-        <h1 className="text-3xl  tracking-tight font-bold uppercase">
-          About us
+        <h1 className="text-3xl sm:text-4xl md:text-5xl tracking-tight font-bold">
+          Pricing
         </h1>
       </div>
     </Layout>
   </>
 )
 
-export default Aboutus
+export default Pricing

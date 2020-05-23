@@ -7,7 +7,7 @@
   margin-top: 1.5rem;
 }
 
-.skewed {
+/* .skewed {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -17,7 +17,11 @@
   height: 60rem;
   z-index: 0;
   transform: skewY(6deg);
-  transform-origin: top right;
+  transform-origin: top right; 
+}*/
+
+.img-bg {
+  background: url(https://assets.website-files.com/5bfd1275cc56e15ce750b18e/5c289afb9a15756f8d893a59_30.%20Wild%20Rice.jpg);
 }
 .indigo-bg {
   background: rgb(127, 156, 245);
@@ -27,7 +31,6 @@
     rgba(195, 218, 254, 1) 80%
   );
 }
-
 .indigo-bg-radial {
   background: rgb(127, 156, 245);
   background: radial-gradient(
@@ -36,7 +39,6 @@
     rgba(195, 218, 254, 1) 80%
   );
 }
-
 @tailwind components;
 
 @tailwind utilities;

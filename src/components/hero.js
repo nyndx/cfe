@@ -13,10 +13,10 @@ const Hero = () => (
           Use your refund to pay your tax prep fees.
         </p>
         <div className="mt-10 md:flex md:items-center">
-          <button className=" mr-6 mb-4 bg-indigo-600 hover:bg-indigo-700 text-white text-xs sm:text-base font-semibold py-2 px-4 rounded-full">
+          <button className=" mr-6 mb-4 bg-indigo-600 hover:bg-indigo-700 text-white text-xs sm:text-base font-semibold py-2 px-4 rounded-full shadow-lg">
             Get started
           </button>
-          <button className=" mb-4 bg-blue-500 hover:bg-blue-600 text-white text-xs sm:text-base font-semibold py-2 px-4 rounded-full">
+          <button className=" mb-4 bg-white hover:bg-gray-100 text-gray-700 text-xs sm:text-base font-semibold py-2 px-4 rounded-full shadow-lg">
             Make a payment
           </button>
         </div>

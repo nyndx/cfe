@@ -19,9 +19,14 @@ const Layout = ({ children, hidebg = true }) => {
         <div
           className={` ${
             hidebg ? "hidden" : "block"
-          } indigo-bg border-b-2 absolute inset-0 h-28rem sm:h-48rem transform skew-y-3 origin-top-right`}
+          } bg-no-repeat  img-bg absolute inset-0 h-28rem sm:h-44rem md:48rem transform skew-y-3 origin-top-right`}
         ></div>
-        <div className="container mx-auto px-4 sm:px-8 bg-transparent relative">
+        {/* <div
+          className={` ${
+            hidebg ? "block" : "hidden"
+          } bg-indigo-200 border-b-2 absolute inset-0 h-48 sm:h-64`}
+        ></div> */}
+        <div className="container mx-auto px-4 sm:px-8 relative">
           <Header />
           <div>{children}</div>
           <Footer />

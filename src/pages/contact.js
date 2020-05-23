@@ -6,7 +6,11 @@ const Contact = () => (
   <>
     <Layout>
       <SEO title="Contact" />
-      <div className="h-60rem ">Contact</div>
+      <div className="h-60rem ">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl tracking-tight font-bold">
+          Contact
+        </h1>
+      </div>
     </Layout>
   </>
 )
