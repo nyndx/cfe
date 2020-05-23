@@ -1,16 +1,16 @@
 import React, { useContext, useEffect } from "react"
 import fs from "../images/undraw_filing_system.svg"
-import useDimensions from "react-use-dimensions"
-import { DimensionsContext } from "../context"
+import { DimensionsContext } from "../context/context"
+
+import useBbox from "../hooks/hooks"
 
 const Hero = () => {
-  const [dimref, { width, height }] = useDimensions()
+  const [bbox, ref] = useBbox()
   const [, setDim] = useContext(DimensionsContext)
-
-  useEffect(() => setDim({ width: width, height: height }), [height, width])
+  useEffect(() => setDim({ height: bbox.height }), [bbox.height])
 
   return (
-    <section ref={dimref} className="mt-10  h-full pb-14 ">
+    <section ref={ref} className="mt-10  h-full pb-14">
       <div className=" min-h-full text-gray-700 flex items-center">
         <div className="self-start lg:self-auto lg:max-w-1/2 lg:mr-8">
           <h1 className="text-3xl sm:text-4xl md:text-5xl tracking-tight font-bold">

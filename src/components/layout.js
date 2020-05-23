@@ -6,17 +6,17 @@
  */
 
 import React, { useContext } from "react"
-import { DimensionsContext } from "../context"
+import { DimensionsContext } from "../context/context"
 import Header from "./header"
 import Footer from "./footer"
 
 // import { useStaticQuery, graphql } from "gatsby"
 
 const Layout = ({ children, hidebg = true }) => {
-  const [dim, _] = useContext(DimensionsContext)
-  const headerPadding = 94 / 16
+  const [dim] = useContext(DimensionsContext)
   const heroM = dim.height / 16
-  const measurements = heroM + headerPadding + 2.5 + 3.5
+  const headerPadding = 94 / 16
+  const measurements = heroM + headerPadding + 5
   return (
     <>
       <div className="font-sans bg-white h-screen relative overflow-auto  ">
@@ -26,16 +26,11 @@ const Layout = ({ children, hidebg = true }) => {
             hidebg ? "hidden" : "block"
           } indigo-bg absolute inset-0 transform skew-y-3 origin-top-right `}
         ></div>
-        {/* <div
-          className={` ${
-            hidebg ? "block" : "hidden"
-          } bg-indigo-200 border-b-2 absolute inset-0 h-48 sm:h-64`}
-        ></div> */}
-        <div className="container mx-auto px-4 sm:px-8 relative">
-          <Header />
+        <Header />
+        <div className="container mx-auto min-h-3/4 px-4 sm:px-8 relative z-10">
           <div>{children}</div>
-          <Footer />
         </div>
+        <Footer />
       </div>
     </>
   )

@@ -11,7 +11,7 @@ const IndexPage = () => (
       <Hero />
       <div className="container mx-auto">
         <div className=" mt-32 md:mt-20  flex flex-col">
-          <div className="sm:max-w-1/2 md:max-w-3/4 py-2">
+          <div className=" md:max-w-3/4 py-2">
             <h2 className="font-semibold text-2xl sm:text-4xl tracking-tight text-gray-700 ">
               Quality & Accurate
               <span className="block">tax preparation services.</span>
@@ -32,7 +32,7 @@ const IndexPage = () => (
             </div>
           </div>
 
-          <div className="sm:self-end sm:max-w-1/2 md:max-w-3/4  mt-16 sm:mt-20 space-y-4 text-gray-600 text-lg md:text-xl">
+          <div className="sm:self-auto md:self-end md:max-w-3/4 mt-16 sm:mt-20 space-y-4 text-gray-600 text-lg md:text-xl">
             <h2 className="font-semibold text-2xl sm:text-4xl tracking-tight text-gray-700">
               Get the most out of your taxes
             </h2>
