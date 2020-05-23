@@ -2,15 +2,13 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Hero from "../components/hero"
 
 const IndexPage = () => (
   <>
     <Layout hidebg={false}>
       <SEO title="Home"></SEO>
-      <Hero />
       <div className="container mx-auto">
-        <div className=" mt-32 md:mt-20  flex flex-col">
+        <div className="flex flex-col">
           <div className=" md:max-w-3/4 py-2">
             <h2 className="font-semibold text-2xl sm:text-4xl tracking-tight text-gray-700 ">
               Quality & Accurate

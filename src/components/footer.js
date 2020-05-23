@@ -3,7 +3,7 @@ import chamberbadge from "../images/chamber-badge-blue-01.png"
 import { Link } from "gatsby"
 
 const Footer = () => (
-  <footer className="mt-24 text-gray-500 font-sans bg-gray-100 border-t-2">
+  <footer className="mt-24 text-gray-500 font-sans bg-gray-50">
     <div className=" container mx-auto px-4 sm:px-8 ">
       <div className=""></div>
       <div className=" py-16 sm:flex sm:justify-between">

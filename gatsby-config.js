@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `CFE Tax Services`,
-    description: `For all your tax and business needs.`,
+    description: `Quality & Accurate
+tax preparation services.`,
     author: `@nynd_x`,
   },
   plugins: [

@@ -5,12 +5,5 @@
  */
 
 // You can delete this file if you're not using it
-import React from "react"
-import { DimensionsProvider } from "./src/context/context"
+
 import "./src/styles/global.css"
-
-const wrapRootElement = ({ element }) => {
-  return <DimensionsProvider>{element}</DimensionsProvider>
-}
-
-export { wrapRootElement }
