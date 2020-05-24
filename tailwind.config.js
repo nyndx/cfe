@@ -29,6 +29,7 @@ module.exports = {
         "72rem": "72rem",
         "76rem": "76rem",
         "80rem": "80rem",
+        "30vh": "30vh",
         "40vh": "40vh",
         "50vh": "50vh",
         "60vh": "60vh",

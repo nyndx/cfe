@@ -30,11 +30,15 @@ const Pricing = () => (
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-center space-y-10 lg:space-y-0 lg:space-x-10 lg:flex-row ">
-          <div className="relative bg-indigo-200 w-56 h-60  md:w-80  lg:w-96 rounded-lg flex items-center shadow-lg">
+        <div className="flex flex-col justify-center items-center space-y-14 lg:space-y-0 lg:space-x-14 lg:flex-row ">
+          <div className="relative bg-indigo-200 w-56 h-60  md:w-80  lg:w-96 rounded-lg flex items-center shadow-xl">
             <div className=" absolute top-0 transform -translate-y-1/2 z-10">
               <span className="">
-                <svg className="h-16" fill="currentColor" viewBox="0 0 20 20">
+                <svg
+                  className="h-16 text-indigo-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
                   <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"></path>
                   <path
                     d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"
@@ -69,10 +73,14 @@ const Pricing = () => (
             </div>
           </div>
 
-          <div className="relative bg-indigo-200 w-56 h-60 md:w-80 md:w-80 lg:w-96 lg:w-96 rounded-lg flex items-center shadow-lg">
+          <div className="relative bg-indigo-200 w-56 h-60 md:w-80 md:w-80 lg:w-96 lg:w-96 rounded-lg flex items-center shadow-xl">
             <div className=" absolute top-0 transform -translate-y-1/2 z-10">
               <span className="">
-                <svg className="h-16" fill="currentColor" viewBox="0 0 20 20">
+                <svg
+                  className="h-16 text-indigo-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
                   <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"></path>
                   <path
                     d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"
@@ -107,10 +115,14 @@ const Pricing = () => (
             </div>
           </div>
 
-          <div className="relative bg-indigo-200 w-56 h-60 md:w-80 md:w-80 lg:w-96 lg:w-96 rounded-lg flex items-center shadow-lg">
+          <div className="relative bg-indigo-200 w-56 h-60 md:w-80 md:w-80 lg:w-96 lg:w-96 rounded-lg flex items-center shadow-xl">
             <div className=" absolute top-0 transform -translate-y-1/2 z-10">
               <span className="">
-                <svg className="h-16" fill="currentColor" viewBox="0 0 20 20">
+                <svg
+                  className="h-16 text-indigo-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
                   <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"></path>
                   <path
                     d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"
@@ -162,7 +174,7 @@ const Pricing = () => (
         </div>
         <div className="flex justify-center">
           <p className="text-center text-xl md:text-2xl">
-            For personal and tailored services please{" "}
+            For more information or for personal and tailored services please{" "}
             <Link
               className="text-indigo-400 hover:text-indigo-500 pb-1 border-b-2 border-indigo-400 font-semibold"
               to="/contact"
