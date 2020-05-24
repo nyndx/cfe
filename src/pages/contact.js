@@ -16,8 +16,8 @@ const Contact = () => (
           </p>
         </div>
 
-        <div className="grid grid-rows-2 lg:grid-cols-2 lg:grid-rows-none md:mx-8 py-6 gap-14 sm:gap-5">
-          <div className="max-w-xs m-auto">
+        <div className="grid grid-rows-1 lg:grid-rows-2 lg:grid-cols-2 lg:grid-rows-none md:mx-8 py-6 gap-14 lg:gap-5">
+          <div className="max-w-xs m-auto hidden lg:block">
             <div className="px-4">
               <h3 className="text-2xl font-semibold text-gray-600">
                 Get in touch!

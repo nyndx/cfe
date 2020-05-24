@@ -31,7 +31,7 @@ const Layout = ({ children, hidebg = true }) => {
           <Hero hide={hidebg} />
         </div>
 
-        <div className="container mx-auto min-h-3/4 px-4 sm:px-8 relative z-10">
+        <div className="container mx-auto min-h-60vh px-4 sm:px-8 relative z-10">
           <div>{children}</div>
         </div>
         <Footer />
