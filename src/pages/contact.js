@@ -95,7 +95,7 @@ const Contact = () => (
             </div>
           </div>
           <div className="max-w-xs sm:max-w-md m-auto">
-            <form className="bg-gray-100 shadow-lg rounded px-4 py-6 space-y-4 sm:text-xl">
+            <form className="bg-gray-100 shadow-lg rounded px-4 py-6 space-y-4 sm:text-xl flex flex-col">
               <div className="flex flex-col ">
                 <label
                   htmlFor="name"
@@ -156,6 +156,16 @@ const Contact = () => (
                   rows="5"
                   className="shadow appearance-none  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-indigo-600 focus:border-2"
                 ></textarea>
+              </div>
+              <div className="self-end">
+                <div className="rounded-lg mt-4 ">
+                  <button
+                    type="submit"
+                    className=" text-center bg-indigo-600 hover:bg-indigo-700 text-white text-xs sm:text-base font-semibold py-2 px-8 rounded-full shadow-lg lg:text-xl uppercase"
+                  >
+                    send
+                  </button>
+                </div>
               </div>
             </form>
           </div>
