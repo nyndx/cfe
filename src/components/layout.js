@@ -20,7 +20,7 @@ const Layout = ({ children, hidebg = true }) => {
           <div
             className={` ${
               hidebg ? "hidden" : "block"
-            } indigo-bg absolute inset-0 transform skew-y-3 origin-top-right `}
+            } indigo-bg absolute inset-0 transform skew-y-3 origin-top-right h-full `}
           ></div>
           <div
             className={` ${
