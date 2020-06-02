@@ -10,7 +10,7 @@ const Aboutus = () => {
     query {
       image: file(relativePath: { eq: "founder_2.jpg" }) {
         sharp: childImageSharp {
-          fluid(maxHeight: 700, maxWidth: 1200) {
+          fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -33,8 +33,9 @@ const Aboutus = () => {
               </h3>
               <div className="">
                 <Img
-                  className="rounded-lg shadow-md"
+                  className="rounded-lg shadow-md lg:h-40rem"
                   fluid={image.sharp.fluid}
+                  alt="CEO & Founder Zadih Cadyma"
                 />
 
                 <div className="mt-8">
