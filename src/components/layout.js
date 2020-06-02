@@ -15,7 +15,7 @@ import Hero from "../components/hero"
 const Layout = ({ children, hidebg = true }) => {
   return (
     <>
-      <div className="font-sans bg-white h-screen  overflow-auto  ">
+      <div className="h-screen overflow-auto font-sans bg-white ">
         <div className="relative">
           <div
             className={` ${
@@ -31,7 +31,7 @@ const Layout = ({ children, hidebg = true }) => {
           <Hero hide={hidebg} />
         </div>
 
-        <div className="container mx-auto min-h-60vh px-4 sm:px-8 relative z-10">
+        <div className="container relative z-10 px-4 mx-auto min-h-60vh sm:px-8">
           <div>{children}</div>
         </div>
         <Footer />
