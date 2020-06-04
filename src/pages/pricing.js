@@ -8,13 +8,13 @@ const Pricing = () => (
   <>
     <Layout>
       <SEO title="Pricing" />
-      <div className="py-10 text-gray-600">
+      <div className="py-12 text-gray-600">
         <div className="flex justify-center text-center">
-          <h2 className="text-2xl font-medium leading-none tracking-tight text-gray-700 md:text-4xl">
+          {/* <h2 className="text-2xl font-medium leading-none tracking-tight text-gray-700 md:text-4xl">
             Select a service for your needs
-          </h2>
+          </h2> */}
         </div>
-        <div className="flex justify-center mt-16 mb-16 ">
+        {/* <div className="flex justify-center mt-16 mb-16 ">
           <div className="flex items-center space-x-2 ">
             <span>
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
@@ -65,7 +65,7 @@ const Pricing = () => (
               </div>
               <div className="flex justify-center mt-6 ">
                 <div className="rounded-lg">
-                  <span className="px-8 py-2 text-xs font-semibold text-center text-white bg-indigo-600 rounded-full shadow-lg  hover:bg-indigo-700 sm:text-base lg:text-xl">
+                  <span className="px-8 py-2 text-xs font-semibold text-center text-white bg-indigo-600 rounded-full shadow-lg hover:bg-indigo-700 sm:text-base lg:text-xl">
                     Buy Now
                   </span>
                 </div>
@@ -107,7 +107,7 @@ const Pricing = () => (
               </div>
               <div className="flex justify-center mt-6 ">
                 <div className="rounded-lg">
-                  <span className="px-8 py-2 text-xs font-semibold text-center text-white bg-indigo-600 rounded-full shadow-lg  hover:bg-indigo-700 sm:text-base lg:text-xl">
+                  <span className="px-8 py-2 text-xs font-semibold text-center text-white bg-indigo-600 rounded-full shadow-lg hover:bg-indigo-700 sm:text-base lg:text-xl">
                     Buy Now
                   </span>
                 </div>
@@ -149,7 +149,7 @@ const Pricing = () => (
               </div>
               <div className="flex justify-center mt-6 ">
                 <div className="rounded-lg">
-                  <span className="px-8 py-2 text-xs font-semibold text-center text-white bg-indigo-600 rounded-full shadow-lg  hover:bg-indigo-700 sm:text-base lg:text-xl">
+                  <span className="px-8 py-2 text-xs font-semibold text-center text-white bg-indigo-600 rounded-full shadow-lg hover:bg-indigo-700 sm:text-base lg:text-xl">
                     Buy Now
                   </span>
                 </div>
@@ -171,7 +171,7 @@ const Pricing = () => (
             </span>
             <h3 className="font-medium uppercase lg:text-lg">personal plans</h3>
           </div>
-        </div>
+        </div> */}
         <div className="flex justify-center">
           <p className="text-xl text-center md:text-2xl">
             For more information or for personal and tailored services please{" "}

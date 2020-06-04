@@ -14,7 +14,7 @@ const IndexPage = () => (
               Quality & Accurate
               <span className="block">tax preparation services.</span>
             </h2>
-            <div className="mt-4 space-y-4 text-lg text-gray-600 md:text-xl ">
+            <div className="mt-4 space-y-4 text-lg text-gray-600 ">
               <p>
                 We’ve developed a way for you to get it done by a CFE
                 Professional. With over 20 years in winning income tax
@@ -30,7 +30,7 @@ const IndexPage = () => (
             </div>
           </div>
 
-          <div className="mt-16 space-y-4 text-lg text-gray-600 sm:self-auto md:self-end md:max-w-3/4 sm:mt-20 md:text-xl">
+          <div className="mt-16 space-y-4 text-lg text-gray-600 sm:self-auto md:self-end md:max-w-3/4 sm:mt-20 ">
             <h2 className="text-2xl font-semibold tracking-tight text-gray-700 sm:text-4xl">
               Get the most out of your taxes
             </h2>
@@ -49,7 +49,7 @@ const IndexPage = () => (
           </div>
         </div>
 
-        <div className="mt-16 space-y-4 text-lg text-gray-600 sm:mt-20 md:text-xl">
+        <div className="mt-16 space-y-4 text-lg text-gray-600 sm:mt-20 ">
           <h2 className="text-2xl font-semibold tracking-tight text-gray-700 sm:text-4xl">
             File with us
           </h2>
@@ -90,7 +90,7 @@ const IndexPage = () => (
             </div>
             <div className="mt-6">
               <span className="pb-1 text-xl font-semibold text-indigo-400 border-b-2 border-indigo-400 hover:text-indigo-500">
-                <Link to="/contact">File here</Link>
+                <Link to="/contact">Contact us</Link>
               </span>
             </div>
           </div>
