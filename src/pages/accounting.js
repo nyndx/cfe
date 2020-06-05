@@ -19,6 +19,25 @@ const Accounting = () => (
               experience, we are able to offer you a high quality service from a
               reputable business that is BBB Accredited!
             </p>
+            <div className="grid grid-cols-2 gap-10 mt-10 ">
+              <p className="leading-relaxed">
+                Accredited by the BBB Since 2012 and a Member of the Natioanl
+                Society of Accountants (NSA). With Over 20 years of experience,
+                The Staff provide a blend of professional service, expertise,
+                all while maintaining a friendly and personal experience while
+                you work with us to meet all personal, business, or professional
+                needs.
+              </p>
+              <p className="leading-relaxed">
+                The mission of CFE Accounting is not just to help small
+                companies get bigger but to take care of individual tax payers
+                as well. The firm provides business development and management
+                consulting services for small and midsized companies in the US.
+                Its offerings include helping clients establish strategies, set
+                goals, and track progress and provide them with necessary cash
+                to meet their business needs.
+              </p>
+            </div>
           </div>
           <div className="mt-10">
             <h2 className="font-light tracking-wide uppercase">our services</h2>
@@ -272,7 +291,9 @@ const Accounting = () => (
                 contact
               </Link>{" "}
               us or visit our{" "}
-              <Link className="text-white border-b-2 border-white">FAQ</Link>{" "}
+              <Link to="/faq" className="text-white border-b-2 border-white">
+                FAQ
+              </Link>{" "}
               page.
             </p>
           </div>

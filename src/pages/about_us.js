@@ -26,11 +26,21 @@ const Aboutus = () => {
           <h2 className="text-2xl font-medium leading-none tracking-tight text-center text-gray-700 md:text-4xl">
             About us
           </h2>
-          <div className="flex flex-col items-center mt-8 text-lg">
+          <div className="flex flex-col items-center mt-8">
             <div className="mb-10 space-y-6">
-              <h3 className="text-2xl">
+              <p className="leading-relaxed">
+                The Cfe companies started with Cfe Accounting and later on in
+                order to better handle each facet of the business, Cfe Tax
+                Services was formed back in 2010; Cfe Consulting is another
+                subdivision of the Cfe Companies which will become a separate
+                business entity in the near future. We handle all business
+                related matter from the business formation, accounting all the
+                way to consulting services.
+              </p>
+              <h3 className="text-xl">
                 Meet the CEO & Founder <strong>Zadih Cadyma</strong>
               </h3>
+
               <div className="">
                 <Img
                   className="rounded-lg shadow-md lg:h-40rem"
@@ -181,7 +191,7 @@ const Aboutus = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full mt-12">
+            {/* <div className="w-full mt-12">
               <div className="space-y-6">
                 <h3 className="text-xl font-semibold md:text-2xl">
                   CFE Companies
@@ -196,7 +206,7 @@ const Aboutus = () => {
                   way to consulting services.
                 </p>
               </div>
-              <div className="mt-6 space-y-4">
+               <div className="mt-6 space-y-4">
                 <h3 className="text-xl font-semibold md:text-2xl">
                   CFE Tax Services
                 </h3>
@@ -261,23 +271,6 @@ const Aboutus = () => {
                 <h3 className="text-xl font-semibold md:text-2xl">
                   CFE Accounting
                 </h3>
-                <p className="leading-relaxed">
-                  Accredited by the BBB Since 2012 and a Member of the Natioanl
-                  Society of Accountants (NSA). With Over 20 years of
-                  experience, The Staff provide a blend of professional service,
-                  expertise, all while maintaining a friendly and personal
-                  experience while you work with us to meet all personal,
-                  business, or professional needs.
-                </p>
-                <p className="leading-relaxed">
-                  The mission of CFE Accounting is not just to help small
-                  companies get bigger but to take care of individual tax payers
-                  as well. The firm provides business development and management
-                  consulting services for small and midsized companies in the
-                  US. Its offerings include helping clients establish
-                  strategies, set goals, and track progress and provide them
-                  with necessary cash to meet their business needs.
-                </p>
                 <p>
                   In addition, Cfe Accounting provides its clients with tax,
                   accounting and consulting services. The company was founded in
@@ -285,7 +278,7 @@ const Aboutus = () => {
                   America.
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </Layout>

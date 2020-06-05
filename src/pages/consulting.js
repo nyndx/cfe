@@ -14,12 +14,30 @@ const Consulting = () => (
           </h1>
           <div className="mt-4">
             <p className="text-lg font-medium leading-relaxed md:max-w-3xl">
-              No idea is neglected at Cfe Consulting LLC. An idea is like a
-              mustard seed which will grow into a giant tree. Cfe Consulting LLC
-              is a multi-dimensional firm with intent to solve an array of
-              business needs. Our primary goal is to improve and grow companies
-              and people’s lives in many ways, financial and otherwise.
+              Founded in 2006 by Founder, C.F.O & C.M.A, Zadih Cadyma, CFE
+              Consulting Services LLC is a full service consulting firm. We have
+              been providing consulting, estate planning and many other business
+              related services to a wide range of clients, including both
+              businesses and individuals.
             </p>
+            <div className="grid grid-cols-2 gap-10 mt-10">
+              <p className="leading-relaxed">
+                No idea is neglected at Cfe Consulting LLC. An idea is like a
+                mustard seed which will grow into a giant tree. Cfe Consulting
+                LLC is a multi-dimensional firm with intent to solve an array of
+                business needs. Our primary goal is to improve and grow
+                companies and people’s lives in many ways, financial and
+                otherwise.
+              </p>
+              <p className="leading-relaxed">
+                We have developed a reputation for professional excellence
+                through the high quality of services we perform for our clients.
+                Our consultants are well positioned to serve all business needs
+                throughout the United States and Canada. We also offer Marketing
+                Research, Online and Print Services, Tax Preparation and
+                Accounting.
+              </p>
+            </div>
           </div>
           <div className="mt-10">
             <h2 className="font-light tracking-wide uppercase">our services</h2>
@@ -250,7 +268,9 @@ const Consulting = () => (
                 contact
               </Link>{" "}
               us or visit our{" "}
-              <Link className="text-white border-b-2 border-white">FAQ</Link>{" "}
+              <Link to="/faq" className="text-white border-b-2 border-white">
+                FAQ
+              </Link>{" "}
               page.
             </p>
           </div>
