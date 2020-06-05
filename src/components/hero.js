@@ -9,13 +9,17 @@ const Hero = ({ hide }) => {
         hide ? "hidden" : "block"
       } mt-10 h-full pb-14 relative container mx-auto px-4 sm:px-8`}
     >
-      <div className="flex items-center min-h-full text-gray-700 ">
-        <div className="self-start lg:self-auto lg:max-w-1/2 lg:mr-8">
-          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-            File with us, pay <span className="text-white">nothing </span>
-            now.
+      <div className="flex items-center justify-center min-h-full text-gray-700 lg:justify-start ">
+        <div className="self-start pb-10 lg:self-auto lg:w-1/2 ">
+          <h1 className="text-4xl font-bold tracking-tight sm:text-4xl md:text-5xl">
+            File with us,
+            <span className="block">
+              {" "}
+              pay <span className="text-white">nothing </span>
+              now.
+            </span>
           </h1>
-          <p className="mt-4 text-xl leading-relaxed text-white sm:mt-2 sm:text-3xl">
+          <p className="mt-4 text-3xl leading-relaxed text-white sm:mt-2 sm:text-3xl">
             Use your refund to pay your tax prep fees.
           </p>
           <div className="mt-10 md:flex md:items-center">
@@ -31,8 +35,11 @@ const Hero = ({ hide }) => {
             </Link> */}
           </div>
         </div>
-        <div className="flex items-center hidden p-2 bg-indigo-100 shadow-lg lg:block lg:max-w-1/2 rounder-lg">
-          <img src={fs} alt="A person filing papers" />
+
+        <div className="flex items-center hidden h-full p-8 lg:block rounder-lg lg:w-1/2">
+          <div>
+            <img src={fs} alt="A person filing papers" />
+          </div>
         </div>
       </div>
     </section>
