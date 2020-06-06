@@ -32,15 +32,15 @@ const Contact = () => {
   //     [e.target.name]: e.target.value,
   //   })
   const handleFormSubmit = (data, e) => {
-    // fetch("/", {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    //   body: encode({ "form-name": "contact", ...formState }),
-    // })
-    //   .then(() => setMsg(true))
-    //   .catch(error => alert(error))
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...formState }),
+    })
+      .then(() => setMsg(true))
+      .catch(error => alert(error))
 
-    // setFormState({ name: "", phone: "", email: "", message: "" })
+    setFormState({ name: "", phone: "", email: "", message: "" })
     e.target.reset()
     console.log(data)
   }
