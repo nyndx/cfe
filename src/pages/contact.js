@@ -31,7 +31,7 @@ const Contact = () => {
   //     [e.target.name]: e.target.value,
   //   })
   const handleFormSubmit = (data, e) => {
-    fetch("/", {
+    fetch("/contact", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...data }),
@@ -60,7 +60,7 @@ const Contact = () => {
               <form
                 onSubmit={handleSubmit(handleFormSubmit)}
                 name="contact"
-                method="post"
+                method="POST"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 data-netlify-recaptcha="true"
