@@ -59,12 +59,116 @@ const Contact = () => {
           </div>
 
           <div className="grid grid-rows-1 py-6 lg:grid-rows-2 lg:grid-cols-2 lg:grid-rows-none md:mx-8 gap-14 lg:gap-5">
-            <div className="hidden max-w-xs m-auto lg:block">
+            <div className="max-w-xs m-auto sm:max-w-md">
+              <form
+                onSubmit={handleSubmit(handleFormSubmit)}
+                name="contact"
+                method="post"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                data-netlify-recaptcha="true"
+                className="flex flex-col px-4 py-6 space-y-4 bg-gray-100 rounded shadow-lg sm:text-xl"
+              >
+                <p className="hidden">
+                  <label>
+                    Don’t fill this out if you're human:
+                    <input name="bot-field" />
+                  </label>
+                </p>
+                <div className="flex flex-col ">
+                  <label
+                    htmlFor="name"
+                    className="mb-2 text-sm font-bold text-gray-600 sm:text-lg"
+                  >
+                    Full Name
+                  </label>
+                  <input
+                    ref={register({ required: true })}
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Your full name"
+                    autoComplete="off"
+                    className="w-full px-3 py-2 leading-tight text-gray-700 rounded shadow appearance-none focus:outline-none focus:border-indigo-600 focus:border-2"
+                  />
+                  {errors.name && <Error>This field is required</Error>}
+                </div>
+                <div className="flex flex-col">
+                  <label
+                    htmlFor="phone"
+                    className="mb-2 text-sm font-bold text-gray-600 sm:text-lg"
+                  >
+                    Phone
+                  </label>
+                  <input
+                    ref={register({ required: true })}
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="Your phone number"
+                    className="w-full px-3 py-2 leading-tight text-gray-700 rounded shadow appearance-none focus:outline-none focus:border-indigo-600 focus:border-2"
+                  />
+                  {errors.phone && <Error>This field is required</Error>}
+                </div>
+                <div className="flex flex-col">
+                  <label
+                    htmlFor="email"
+                    className="mb-2 text-sm font-bold text-gray-600 sm:text-lg"
+                  >
+                    Email
+                  </label>
+                  <input
+                    ref={register({ required: true })}
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Your e-mail"
+                    className="w-full px-3 py-2 leading-tight text-gray-700 rounded shadow appearance-none focus:outline-none focus:border-indigo-600 focus:border-2"
+                  />
+                  {errors.email && <Error>This field is required</Error>}
+                </div>
+                <div className="flex flex-col">
+                  <label
+                    htmlFor="message"
+                    className="mb-2 text-sm font-bold text-gray-600 sm:text-lg"
+                  >
+                    Message
+                  </label>
+                  <textarea
+                    ref={register({ required: true })}
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="5"
+                    placeholder="How can we help you?"
+                    className="w-full px-3 py-2 leading-tight text-gray-700 rounded shadow appearance-none focus:outline-none focus:border-indigo-600 focus:border-2"
+                  ></textarea>
+                  {errors.message && <Error>This field is required</Error>}
+                </div>
+                <div data-netlify-recaptcha="true" className="mt-4"></div>
+                {msg ? (
+                  <p className="px-1 py-2 text-base font-medium text-center text-white transition duration-300 ease-in-out bg-indigo-400 rounded">
+                    Thank you for contacting us, we will get back to you soon!
+                  </p>
+                ) : null}
+                <div className="self-end outline-none">
+                  <div className="mt-4 rounded-lg outline-none ">
+                    <button
+                      type="submit"
+                      className="px-8 py-2 text-xs font-semibold text-center text-white uppercase bg-indigo-600 rounded-full shadow-lg outline-none hover:bg-indigo-700 sm:text-base lg:text-xl"
+                    >
+                      send
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div className="max-w-xs m-auto">
               <div className="px-4">
-                <h3 className="text-2xl font-semibold text-gray-600">
+                <h3 className="text-xl font-semibold text-gray-600 md:text-2xl">
                   Get in touch!
                 </h3>
-                <div className="grid gap-4 mt-4 text-lg grid-row-2">
+                <div className="grid gap-4 mt-4 grid-row-2">
                   <div className="space-y-2">
                     <h4 className="font-semibold leading-4">Charlotte:</h4>
                     <ul className="space-y-2">
@@ -170,110 +274,6 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="max-w-xs m-auto sm:max-w-md">
-              <form
-                onSubmit={handleSubmit(handleFormSubmit)}
-                name="contact"
-                method="post"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
-                data-netlify-recaptcha="true"
-                className="flex flex-col px-4 py-6 space-y-4 bg-gray-100 rounded shadow-lg sm:text-xl"
-              >
-                <p className="hidden">
-                  <label>
-                    Don’t fill this out if you're human:
-                    <input name="bot-field" />
-                  </label>
-                </p>
-                <div className="flex flex-col ">
-                  <label
-                    htmlFor="name"
-                    className="mb-2 text-sm font-bold text-gray-600 sm:text-lg"
-                  >
-                    Full Name
-                  </label>
-                  <input
-                    ref={register({ required: true })}
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="Your full name"
-                    autoComplete="off"
-                    className="w-full px-3 py-2 leading-tight text-gray-700 rounded shadow appearance-none focus:outline-none focus:border-indigo-600 focus:border-2"
-                  />
-                  {errors.name && <Error>This field is required</Error>}
-                </div>
-                <div className="flex flex-col">
-                  <label
-                    htmlFor="phone"
-                    className="mb-2 text-sm font-bold text-gray-600 sm:text-lg"
-                  >
-                    Phone
-                  </label>
-                  <input
-                    ref={register({ required: true })}
-                    type="tel"
-                    name="phone"
-                    id="phone"
-                    placeholder="Your phone number"
-                    className="w-full px-3 py-2 leading-tight text-gray-700 rounded shadow appearance-none focus:outline-none focus:border-indigo-600 focus:border-2"
-                  />
-                  {errors.phone && <Error>This field is required</Error>}
-                </div>
-                <div className="flex flex-col">
-                  <label
-                    htmlFor="email"
-                    className="mb-2 text-sm font-bold text-gray-600 sm:text-lg"
-                  >
-                    Email
-                  </label>
-                  <input
-                    ref={register({ required: true })}
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Your e-mail"
-                    className="w-full px-3 py-2 leading-tight text-gray-700 rounded shadow appearance-none focus:outline-none focus:border-indigo-600 focus:border-2"
-                  />
-                  {errors.email && <Error>This field is required</Error>}
-                </div>
-                <div className="flex flex-col">
-                  <label
-                    htmlFor="message"
-                    className="mb-2 text-sm font-bold text-gray-600 sm:text-lg"
-                  >
-                    Message
-                  </label>
-                  <textarea
-                    ref={register({ required: true })}
-                    name="message"
-                    id="message"
-                    cols="30"
-                    rows="5"
-                    placeholder="How can we help you?"
-                    className="w-full px-3 py-2 leading-tight text-gray-700 rounded shadow appearance-none focus:outline-none focus:border-indigo-600 focus:border-2"
-                  ></textarea>
-                  {errors.message && <Error>This field is required</Error>}
-                </div>
-                <div data-netlify-recaptcha="true" className="mt-4"></div>
-                {msg ? (
-                  <p className="px-1 py-2 text-base font-medium text-center text-white transition duration-300 ease-in-out bg-indigo-400 rounded">
-                    Thank you for contacting us, we will get back to you soon!
-                  </p>
-                ) : null}
-                <div className="self-end outline-none">
-                  <div className="mt-4 rounded-lg outline-none ">
-                    <button
-                      type="submit"
-                      className="px-8 py-2 text-xs font-semibold text-center text-white uppercase bg-indigo-600 rounded-full shadow-lg outline-none hover:bg-indigo-700 sm:text-base lg:text-xl"
-                    >
-                      send
-                    </button>
-                  </div>
-                </div>
-              </form>
             </div>
           </div>
         </div>
