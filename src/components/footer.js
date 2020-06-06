@@ -162,18 +162,20 @@ const Footer = () => (
         </div> */}
       </div>
       <div className="flex mb-6 space-x-5">
-        <a href="#" target="_blank">
+        <a href="#" target="_blank" rel="noopener noreferrer">
           <img src={chamberbadge} className="h-24" alt="chamber of commerce" />
         </a>
         <a
           href="https://www.bbb.org/us/nc/charlotte/profile/accounting/cfe-accounting-0473-273659"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img src={BBB} className="h-24" alt="better business bureau" />
         </a>
         <a
           href="https://www.thumbtack.com/nc/charlotte/tax-preparation/cfe-tax-services/service/286141074372912171"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img src={thumbtack} className="h-24" alt="thumbtack" />
         </a>
