@@ -10,7 +10,6 @@ const Error = ({ children, ...rest }) => (
 )
 const Contact = () => {
   const { register, handleSubmit, errors } = useForm()
-  const [formState, setFormState] = useState({})
   const [msg, setMsg] = useState(null)
 
   useEffect(() => {
@@ -35,14 +34,12 @@ const Contact = () => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...formState }),
+      body: encode({ "form-name": "contact", ...data }),
     })
       .then(() => setMsg(true))
       .catch(error => alert(error))
-
-    setFormState({ name: "", phone: "", email: "", message: "" })
     e.target.reset()
-    console.log(data)
+    // console.log(data)
   }
   return (
     <>
