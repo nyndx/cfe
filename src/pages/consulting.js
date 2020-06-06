@@ -20,7 +20,7 @@ const Consulting = () => (
               related services to a wide range of clients, including both
               businesses and individuals.
             </p>
-            <div className="grid grid-cols-2 gap-10 mt-10">
+            <div className="grid gap-10 mt-10 sm:grid-cols-2">
               <p className="leading-relaxed">
                 No idea is neglected at Cfe Consulting LLC. An idea is like a
                 mustard seed which will grow into a giant tree. Cfe Consulting

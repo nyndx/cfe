@@ -19,7 +19,7 @@ const Accounting = () => (
               experience, we are able to offer you a high quality service from a
               reputable business that is BBB Accredited!
             </p>
-            <div className="grid grid-cols-2 gap-10 mt-10 ">
+            <div className="grid gap-10 mt-10 sm:grid-cols-2 ">
               <p className="leading-relaxed">
                 Accredited by the BBB Since 2012 and a Member of the Natioanl
                 Society of Accountants (NSA). With Over 20 years of experience,
