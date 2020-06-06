@@ -278,7 +278,7 @@ const Accounting = () => (
                 </div>
                 <li>Accounts Receivable & Payable</li>
               </div>
-              <p className>And much more ...</p>
+              <p>And much more ...</p>
             </ul>
           </div>
           <div className="flex items-center justify-center w-full h-16 h-full px-4 py-6 mt-10 bg-indigo-400 rounded shadow-sm">
