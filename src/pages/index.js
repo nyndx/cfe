@@ -10,7 +10,7 @@ const IndexPage = () => (
       <div className="">
         <div className="flex flex-col">
           <div className="py-2 md:max-w-3/4">
-            <h2 className="text-2xl font-semibold tracking-tight text-gray-700 sm:text-4xl ">
+            <h2 className="text-xl font-semibold tracking-tight text-gray-700 sm:text-3xl ">
               Quality & Accurate
               <span className="block">tax preparation services.</span>
             </h2>
@@ -31,7 +31,7 @@ const IndexPage = () => (
           </div>
 
           <div className="mt-16 space-y-4 text-lg text-gray-600 sm:self-auto md:self-end md:max-w-3/4 sm:mt-20 ">
-            <h2 className="text-2xl font-semibold tracking-tight text-gray-700 sm:text-4xl">
+            <h2 className="text-xl font-semibold tracking-tight text-gray-700 sm:text-3xl">
               Get the most out of your taxes
             </h2>
             <p className="">
@@ -50,7 +50,7 @@ const IndexPage = () => (
         </div>
 
         <div className="mt-16 space-y-4 text-lg text-gray-600 sm:mt-20 ">
-          <h2 className="text-2xl font-semibold tracking-tight text-gray-700 sm:text-4xl">
+          <h2 className="text-xl font-semibold tracking-tight text-gray-700 sm:text-3xl">
             File with us
           </h2>
           <div>

@@ -25,11 +25,6 @@ const Contact = () => {
       .join("&")
   }
 
-  // const handleChange = e =>
-  //   setFormState({
-  //     ...formState,
-  //     [e.target.name]: e.target.value,
-  //   })
   const handleFormSubmit = (data, e) => {
     fetch("/contact", {
       method: "POST",
@@ -39,7 +34,6 @@ const Contact = () => {
       .then(() => setMsg(true))
       .catch(error => alert(error))
     e.target.reset()
-    // console.log(data)
   }
   return (
     <>
@@ -63,7 +57,6 @@ const Contact = () => {
                 method="POST"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
-                data-netlify-recaptcha="true"
                 className="flex flex-col px-4 py-6 space-y-4 bg-gray-100 rounded shadow-lg sm:text-xl"
               >
                 <p className="hidden">
@@ -142,12 +135,7 @@ const Contact = () => {
                   ></textarea>
                   {errors.message && <Error>This field is required</Error>}
                 </div>
-                <div data-netlify-recaptcha="true" className="mt-4"></div>
-                {msg ? (
-                  <p className="px-1 py-2 text-base font-medium text-center text-white transition duration-300 ease-in-out bg-indigo-400 rounded">
-                    Thank you for contacting us, we will get back to you soon!
-                  </p>
-                ) : null}
+
                 <div className="self-end outline-none">
                   <div className="mt-4 rounded-lg outline-none ">
                     <button
@@ -272,6 +260,13 @@ const Contact = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="h-10 mt-10">
+            {msg ? (
+              <p className="px-1 py-2 text-base font-medium text-center text-white transition duration-300 ease-in-out bg-green-400 rounded">
+                Thank you for contacting us, we will get back to you soon!
+              </p>
+            ) : null}
           </div>
         </div>
       </Layout>
