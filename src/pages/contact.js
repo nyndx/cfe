@@ -39,7 +39,7 @@ const Contact = () => {
     <>
       <Layout>
         <SEO title="Contact" />
-        <div className="h-full py-12 text-gray-600">
+        <div className="h-full py-12 pb-20 text-gray-600">
           <div className="mb-4 space-y-2 text-center">
             <h2 className="text-2xl font-medium leading-none tracking-tight text-center md:text-4xl">
               Contact

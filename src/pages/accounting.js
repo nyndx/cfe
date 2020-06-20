@@ -7,7 +7,7 @@ const Accounting = () => (
   <>
     <Layout>
       <SEO title="Accounting" />
-      <div className="text-gray-700 ">
+      <div className="pb-20 text-gray-700">
         <div className="mt-12">
           <h1 className="text-2xl font-semibold tracking-tight sm:text-4xl md:text-5xl">
             We measure our success by the success of our clients
@@ -291,8 +291,8 @@ const Accounting = () => (
                 contact
               </Link>{" "}
               us or visit our{" "}
-              <Link to="/faq" className="text-white border-b-2 border-white">
-                FAQ
+              <Link to="/wiki" className="text-white border-b-2 border-white">
+                wiki
               </Link>{" "}
               page.
             </p>

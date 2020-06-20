@@ -7,7 +7,7 @@ const IndexPage = () => (
   <>
     <Layout hidebg={false}>
       <SEO title="Home"></SEO>
-      <div className="">
+      <div className="pb-20">
         <div className="flex flex-col">
           <div className="py-2 md:max-w-3/4">
             <h2 className="text-xl font-semibold tracking-tight text-gray-700 sm:text-3xl ">

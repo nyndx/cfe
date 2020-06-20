@@ -6,8 +6,8 @@ const Social = () => (
   <>
     <Layout>
       <SEO title="About Us" />
-      <div className="text-gray-700">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl tracking-tight font-bold">
+      <div className="pb-20 text-gray-700">
+        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
           social responsibility
         </h1>
       </div>

@@ -5,11 +5,11 @@ import thumbtack from "../images/thumbtack.svg"
 import { Link } from "gatsby"
 
 const Footer = () => (
-  <footer className="font-sans text-gray-500 bg-gray-50">
+  <footer className="font-sans text-gray-500 bg-gray-100">
     <div className="container px-4 mx-auto sm:px-8">
       <div className="py-16 space-y-5 sm:space-y-0 sm:flex">
         <div className="w-full mr-6 sm:w-1/4">
-          <h3 className="font-semibold text-gray-600 ">Links</h3>
+          <h3 className="font-medium text-gray-600 uppercase ">site</h3>
           <ul className="mt-4 space-y-4">
             <Link to="/accounting">
               <li className="mb-2 hover:text-indigo-400">Accounting </li>
@@ -34,10 +34,10 @@ const Footer = () => (
           </ul>
         </div>
         <div>
-          <h3 className="font-semibold text-gray-600">Social Links</h3>
+          <h3 className="font-medium text-gray-600 uppercase ">Social Links</h3>
         </div>
       </div>
-      <div className="flex pt-6 mb-6 space-x-8 border-t-2 border-gray-200">
+      <div className="flex py-6 space-x-8 border-t-2 border-gray-200">
         <a href="#" target="_blank" rel="noopener noreferrer">
           <img src={chamberbadge} className="h-24" alt="chamber of commerce" />
         </a>

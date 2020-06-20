@@ -8,7 +8,7 @@ const Pricing = () => (
   <>
     <Layout>
       <SEO title="Pricing" />
-      <div className="py-12 text-gray-600">
+      <div className="py-12 pb-20 text-gray-600">
         <div className="flex justify-center text-center">
           {/* <h2 className="text-2xl font-medium leading-none tracking-tight text-gray-700 md:text-4xl">
             Select a service for your needs
