@@ -7,7 +7,15 @@ tax preparation services.`,
   },
   plugins: [
     `gatsby-plugin-postcss`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -15,8 +23,14 @@ tax preparation services.`,
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `faq`,
+        path: `${__dirname}/src/content/wiki`,
+      },
+    },
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

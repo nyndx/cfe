@@ -5,29 +5,31 @@ import thumbtack from "../images/thumbtack.svg"
 import { Link } from "gatsby"
 
 const Footer = () => (
-  <footer className="mt-24 font-sans text-gray-500 bg-gray-50">
+  <footer className="font-sans text-gray-500 bg-gray-50">
     <div className="container px-4 mx-auto sm:px-8">
       <div className="py-16 space-y-5 sm:space-y-0 sm:flex">
         <div className="w-full mr-6 sm:w-1/4">
           <h3 className="font-semibold text-gray-600 ">Links</h3>
           <ul className="mt-4 space-y-4">
             <Link to="/accounting">
-              <li className="hover:text-indigo-400">Accounting </li>
+              <li className="mb-2 hover:text-indigo-400">Accounting </li>
             </Link>
             <Link to="/consulting">
-              <li className="hover:text-indigo-400">Consulting</li>
+              <li className="mb-2 hover:text-indigo-400">Consulting</li>
             </Link>
             <Link to="/contact">
-              <li className="hover:text-indigo-400">Contact us</li>
+              <li className="mb-2 hover:text-indigo-400">Contact us</li>
             </Link>
             <Link to="/about_us">
-              <li className="hover:text-indigo-400">About us</li>
+              <li className="mb-2 hover:text-indigo-400">About us</li>
             </Link>
-            <Link to="/faq">
-              <li className="hover:text-indigo-400">Faq</li>
+            <Link to="/wiki">
+              <li className="mb-2 hover:text-indigo-400">Wiki</li>
             </Link>
             <Link to="/social">
-              <li className="hover:text-indigo-400">Social responsibility</li>
+              <li className="mb-2 hover:text-indigo-400">
+                Social responsibility
+              </li>
             </Link>
           </ul>
         </div>
