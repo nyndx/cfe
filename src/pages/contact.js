@@ -9,7 +9,9 @@ const Error = ({ children, ...rest }) => (
   </span>
 )
 const Contact = () => {
-  const { register, handleSubmit, errors } = useForm()
+  const { register, handleSubmit, errors, formState } = useForm({
+    mode: "onBlur",
+  })
   const [msg, setMsg] = useState(null)
 
   useEffect(() => {
@@ -33,7 +35,7 @@ const Contact = () => {
     })
       .then(() => setMsg(true))
       .catch(error => alert(error))
-    e.target.reset()
+    formState.isSubmitted && e.target.reset()
   }
   return (
     <>
@@ -139,8 +141,13 @@ const Contact = () => {
                 <div className="self-end outline-none">
                   <div className="mt-4 rounded-lg outline-none ">
                     <button
+                      disabled={formState.isSubmitting}
                       type="submit"
-                      className="px-8 py-2 text-xs font-semibold text-center text-white uppercase bg-indigo-600 rounded-full shadow-lg outline-none hover:bg-indigo-700 sm:text-base lg:text-xl"
+                      className={`${
+                        formState.isSubmitting
+                          ? "bg-indigo-300 opacity-75 cursor-not-allowed"
+                          : ""
+                      } px-8 py-2 text-xs font-semibold text-center text-white uppercase bg-indigo-600 rounded-full shadow-lg outline-none hover:bg-indigo-700 sm:text-base lg:text-xl`}
                     >
                       send
                     </button>
@@ -262,7 +269,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="h-10 mt-10">
-            {msg ? (
+            {msg && formState.isSubmitted ? (
               <p className="px-1 py-2 text-base font-medium text-center text-white transition duration-300 ease-in-out bg-green-400 rounded">
                 Thank you for contacting us, we will get back to you soon!
               </p>
