@@ -20,10 +20,9 @@ const FaqLayout = ({ children }) => {
     }
   `)
   const nodes = query.allMdx.nodes
-  console.log(showSidebar)
 
   return (
-    <div className="flex h-full ">
+    <div className="relative flex h-full ">
       <div className="hidden w-1/4 px-4 pt-8 overflow-y-auto border-r border-gray-200 md:block min-h-70vh">
         {nodes.map(({ id, frontmatter, fields }) => (
           <Link to={`/wiki/${fields.slug}`} key={id}>
@@ -37,7 +36,7 @@ const FaqLayout = ({ children }) => {
       <div
         className={`${
           showSidebar ? "block" : "hidden"
-        } fixed bg-white opacity-100 h-full z-50 border-r shadow-r-lg pr-4 pt-6 overflow-y-auto`}
+        } absolute bg-white opacity-100 h-full z-50 border-r shadow-r-lg pr-4 pt-6 overflow-y-auto w-48 transition-all ease-in`}
       >
         {nodes.map(({ id, frontmatter, fields }) => (
           <Link
@@ -46,7 +45,7 @@ const FaqLayout = ({ children }) => {
             onClick={() => setShowSidebar(false)}
           >
             <div
-              className="mb-2 font-medium text-gray-600 hover:text-indigo-500"
+              className="mb-2 text-sm text-gray-600 hover:text-indigo-500"
               onClick={() => setShowSidebar(false)}
             >
               {frontmatter.title}
