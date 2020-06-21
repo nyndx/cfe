@@ -9,10 +9,10 @@ export default ({ data }) => {
   const { body, frontmatter } = data.mdx
   return (
     <Layout>
-      <SEO title={`CFE Wiki | ${frontmatter.title}`} />
+      <SEO title={`CFE Wiki - ${frontmatter.title}`} />
       <FaqLayout>
-        <div className="sm:pr-10 sm:pl-6 sm:overflow-y-auto sm:h-80vh">
-          <div className="mt-8 mb-10">
+        <div className="overflow-y-auto sm:pr-10 sm:pl-6 h-80vh hide-scroll">
+          <div className="pr-8 mt-8 mb-10">
             <MDXRenderer>{body}</MDXRenderer>
           </div>
         </div>

@@ -1,5 +1,13 @@
 @tailwind base;
 
+.hide-scroll::-webkit-scrollbar {
+  scrollbar-width: none;
+  display: none;
+}
+.hide-scroll {
+  -ms-overflow-style: none;
+}
+
 .hero-height {
   height: 90vh;
 }
