@@ -90,7 +90,7 @@ const IndexPage = () => (
             </div>
             <div className="mt-6">
               <span className="pb-1 text-xl font-semibold text-indigo-400 border-b-2 border-indigo-400 hover:text-indigo-500">
-                <a href="https://cfetaxservices.securefilepro.com/">
+                <a href="https://cfetaxservices.securefilepro.com/connect/#/login">
                   File here
                 </a>
               </span>
