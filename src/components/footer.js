@@ -38,7 +38,7 @@ const Footer = () => (
         </div>
       </div>
       <div className="flex py-6 space-x-8 border-t-2 border-gray-200">
-        <a href="#" target="_blank" rel="noopener noreferrer">
+        <a href="tbd" target="_blank" rel="noopener noreferrer">
           <img src={chamberbadge} className="h-24" alt="chamber of commerce" />
         </a>
         <a

@@ -47,6 +47,9 @@ const FaqLayout = ({ children }) => {
             <div
               className="mb-2 text-sm text-gray-600 hover:text-indigo-500"
               onClick={() => setShowSidebar(false)}
+              onKeyDown={e => e.key === "Enter" && setShowSidebar(false)}
+              tabIndex="-1"
+              role="button"
             >
               {frontmatter.title}
             </div>
