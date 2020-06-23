@@ -10,11 +10,11 @@ const IndexPage = () => (
       <div className="pb-20">
         <div className="flex flex-col">
           <div className="py-2 md:max-w-3/4">
-            <h2 className="text-xl font-semibold tracking-tight text-gray-700 sm:text-3xl ">
+            <h2 className="text-xl font-semibold tracking-tight text-gray-700 sm:text-2xl ">
               Quality & Accurate
               <span className="block">tax preparation services.</span>
             </h2>
-            <div className="mt-4 space-y-4 text-lg text-gray-600 ">
+            <div className="mt-4 space-y-4 text-gray-600 ">
               <p>
                 We’ve developed a way for you to get it done by a CFE
                 Professional. With over 20 years in winning income tax
@@ -30,17 +30,17 @@ const IndexPage = () => (
             </div>
           </div>
 
-          <div className="mt-16 space-y-4 text-lg text-gray-600 sm:self-auto md:self-end md:max-w-3/4 sm:mt-20 ">
-            <h2 className="text-xl font-semibold tracking-tight text-gray-700 sm:text-3xl">
+          <div className="mt-16 space-y-4 text-gray-600 sm:self-auto md:self-end md:max-w-3/4 sm:mt-20 ">
+            <h2 className="text-xl font-semibold tracking-tight text-gray-600 sm:text-2xl">
               Get the most out of your taxes
             </h2>
-            <p className="">
+            <p>
               We routinely examine prior years tax returns of new clients, and 4
               out of 10 errors were found in our clients' returns prepared by
               our competitors. This resulted in lower refunds, deductions,
               credits/rebates not claimed, and even tax audits.
             </p>
-            <p className="">
+            <p>
               This year, try accurate results and financial peace of mind. -
               <span className="pb-1 text-base font-semibold border-b-2 border-indigo-400">
                 <Link to="/contact">Try a CFE Professional.</Link>
@@ -49,8 +49,8 @@ const IndexPage = () => (
           </div>
         </div>
 
-        <div className="mt-16 space-y-4 text-lg text-gray-600 sm:mt-20 ">
-          <h2 className="text-xl font-semibold tracking-tight text-gray-700 sm:text-3xl">
+        <div className="mt-16 space-y-4 text-gray-600 sm:mt-20 ">
+          <h2 className="text-xl font-semibold tracking-tight text-gray-600 sm:text-2xl">
             File with us
           </h2>
           <div>

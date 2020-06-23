@@ -7,13 +7,13 @@ const Consulting = () => (
   <>
     <Layout>
       <SEO title="Consulting" />
-      <div className="pb-20 text-gray-700 ">
+      <div className="pb-20 text-gray-600 ">
         <div className="mt-12">
-          <h1 className="text-2xl font-semibold tracking-tight sm:text-4xl md:text-5xl">
+          <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl md:text-4xl">
             Your Business is our business
           </h1>
           <div className="mt-4">
-            <p className="text-lg font-medium leading-relaxed md:max-w-3xl">
+            <p className="font-medium leading-relaxed  md:max-w-3xl">
               Founded in 2006 by Founder, C.F.O & C.M.A, Zadih Cadyma, CFE
               Consulting Services LLC is a full service consulting firm. We have
               been providing consulting, estate planning and many other business

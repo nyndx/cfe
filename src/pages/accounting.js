@@ -7,13 +7,13 @@ const Accounting = () => (
   <>
     <Layout>
       <SEO title="Accounting" />
-      <div className="pb-20 text-gray-700">
+      <div className="pb-20 text-gray-600">
         <div className="mt-12">
-          <h1 className="text-2xl font-semibold tracking-tight sm:text-4xl md:text-5xl">
+          <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl md:text-4xl">
             We measure our success by the success of our clients
           </h1>
           <div className="mt-4">
-            <p className="text-lg font-medium leading-relaxed md:max-w-3xl">
+            <p className="font-medium leading-relaxed md:max-w-3xl">
               Our business encompasses nearly every aspect of financial life,
               whether business, personal, or professional. With 20 years of
               experience, we are able to offer you a high quality service from a

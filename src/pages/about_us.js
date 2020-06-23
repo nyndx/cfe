@@ -23,7 +23,7 @@ const Aboutus = () => {
       <Layout>
         <SEO title="About Us" />
         <div className="flex flex-col items-center py-10 pb-20 text-gray-600">
-          <h2 className="text-2xl font-medium leading-none tracking-tight text-center text-gray-700 md:text-4xl">
+          <h2 className="text-2xl font-medium font-semibold leading-none tracking-tight text-center md:text-3xl sm:text-2xl ">
             About us
           </h2>
           <div className="flex flex-col items-center mt-8">
