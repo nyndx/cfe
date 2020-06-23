@@ -35,9 +35,8 @@ const Contact = () => {
     })
       .then(() => setMsg(true))
       .catch(error => alert(error))
-    if (formState.isSubmitted) {
-      e.target.reset()
-    }
+
+    e.target.reset()
   }
   return (
     <>
