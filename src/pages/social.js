@@ -29,8 +29,9 @@ const Social = () => (
               Our Vocational Program:
             </h2>
             <p>
-              In order for
+              In order for{" "}
               <a
+                className="pb-2 underline cursor-pointer"
                 href="http://www.breadforsouls.org/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -103,7 +104,7 @@ const Social = () => (
               </div>
               <div className="max-w-3xl p-6 mx-auto my-16 text-white bg-yellow-500 rounded">
                 <section className="mt-4">
-                  <h2 className="mb-4 text-lg font-medium underline">
+                  <h2 className="mb-4 text-sm font-medium tracking-wider uppercase">
                     Why Be Responsible?
                   </h2>
                   <div className="space-y-2">
@@ -124,7 +125,7 @@ const Social = () => (
                   </div>
                 </section>
                 <section className="mt-4">
-                  <h2 className="mb-4 text-lg font-medium underline">
+                  <h2 className="mb-4 text-xs font-medium tracking-wider uppercase">
                     Our Mission:
                   </h2>
                   <p>
@@ -143,7 +144,7 @@ const Social = () => (
                   </p>
                 </section>
                 <section className="mt-4">
-                  <h2 className="mb-4 text-lg font-medium underline">
+                  <h2 className="mb-4 text-xs font-medium tracking-wider uppercase">
                     Our vision:
                   </h2>
                   <div className="space-y-2">
@@ -177,7 +178,7 @@ const Social = () => (
                   </div>
                 </section>
                 <section className="mt-4 ">
-                  <h2 className="mb-4 text-lg font-medium underline">
+                  <h2 className="mb-4 text-xs font-medium tracking-wider uppercase ">
                     Our Values:
                   </h2>
                   <div className="space-y-2">
@@ -242,6 +243,7 @@ const Social = () => (
                 <img
                   src="https://d1ev1rt26nhnwq.cloudfront.net/ccmtblv2.png"
                   id="banner"
+                  alt="Amazon donation banner"
                 />
 
                 <div className="absolute inset-0 flex items-center justify-center w-full h-full ">
