@@ -62,7 +62,7 @@ function Header() {
             </div>
           </div>
 
-          <nav className="items-center hidden space-x-4 text-base sm:block sm:flex md:text-lg">
+          <nav className="items-center hidden space-x-4 text-base sm:flex md:text-lg">
             <Link
               to="/accounting"
               className="block pb-1 font-medium text-gray-600 transition duration-300 ease-in-out hover:text-gray-700 hover:border-b-2 hover:border-indigo-400 hover:font-semibold"
@@ -82,7 +82,7 @@ function Header() {
               className="block pb-1 font-medium text-gray-600 hover:text-gray-700 hover:border-b-2 hover:border-indigo-400 hover:font-semibold"
               activeClassName="border-b-2 border-indigo-400 font-semibold"
             >
-              Pricing
+              Pay
             </Link>
             <Link
               to="/contact"
@@ -124,7 +124,7 @@ function Header() {
             activeClassName="font-bold"
             className="block py-2 font-medium text-gray-600 border-b-2 hover:text-gray-700"
           >
-            Pricing
+            Pay
           </Link>
           <Link
             to="/contact"

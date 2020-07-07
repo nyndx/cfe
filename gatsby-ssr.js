@@ -6,7 +6,7 @@
 
 // You can delete this file if you're not using it
 
-const styles = require("./src/styles/global.css")
+require("./src/styles/global.css")
 const React = require("react")
 const components = require("./src/components/mdxcomponents")
 

@@ -59,7 +59,7 @@ module.exports = {
         full: "100%",
       },
       fontFamily: {
-        sans: ["Inter", ...defaultTheme.fontFamily.sans],
+        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
       },
     },
   },
@@ -74,5 +74,31 @@ module.exports = {
     transitionProperty: ["responsive", "hover", "focus"],
     outline: ["focus", "responsive", "hover"],
   },
-  plugins: [require("@tailwindcss/ui")],
+  plugins: [
+    require("@tailwindcss/ui"),
+    function ({ addBase }) {
+      addBase([
+        {
+          "@font-face": {
+            fontFamily: "Inter var",
+            fontWeight: "100 900",
+            fontStyle: "normal",
+            fontNamedInstance: "Regular",
+            fontDisplay: "swap",
+            src: 'url("Inter-roman.var.woff2?v=3.13") format("woff2")',
+          },
+        },
+        {
+          "@font-face": {
+            fontFamily: "Inter var",
+            fontWeight: "100 900",
+            fontStyle: "italic",
+            fontNamedInstance: "Italic",
+            fontDisplay: "swap",
+            src: 'url("Inter-italic.var.woff2?v=3.13") format("woff2")',
+          },
+        },
+      ])
+    },
+  ],
 }

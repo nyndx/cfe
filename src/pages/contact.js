@@ -52,7 +52,7 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="grid grid-rows-1 py-6 lg:grid-rows-2 lg:grid-cols-2 lg:grid-rows-none md:mx-8 gap-14 lg:gap-5">
+          <div className="grid grid-rows-1 py-6 lg:grid-cols-2 lg:grid-rows-none md:mx-8 gap-14 lg:gap-5">
             <div className="max-w-xs m-auto sm:max-w-md">
               <form
                 onSubmit={handleSubmit(handleFormSubmit)}
