@@ -25,7 +25,7 @@ const Pricing = () => {
     currency: "USD",
     minimumFractionDigits: 2,
   })
-  console.log(Number(price))
+
   return (
     <>
       <Layout>

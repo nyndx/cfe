@@ -64,7 +64,11 @@ function Paypal({ product }) {
     <div className="w-3/4 px-4 overflow-scroll bg-white rounded-md shadow-lg md:w-1/2">
       <div className="">
         <div className="py-6">
-          {error && <>Uh oh, an error occurred! {error.message}</>}
+          {error && (
+            <div className="mb-6 font-medium text-center text-red-500">
+              Uh oh, an error occurred! {error.message}
+            </div>
+          )}
           <h2 className="w-full text-lg font-medium text-center ">
             <span className="text-xl font-medium ">
               {" "}
