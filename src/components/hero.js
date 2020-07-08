@@ -10,7 +10,7 @@ const Hero = ({ hide }) => {
       } mt-10 h-full pb-14 relative container mx-auto px-4 sm:px-8`}
     >
       <div className="flex items-center justify-center min-h-full text-gray-700 lg:justify-start ">
-        <div className="self-start pb-10 lg:self-auto lg:w-1/2 ">
+        <header className="self-start pb-10 lg:self-auto lg:w-1/2 ">
           <h1 className="text-4xl font-bold tracking-tight sm:text-4xl md:text-5xl">
             File with us,
             <span className="block">
@@ -34,9 +34,9 @@ const Hero = ({ hide }) => {
               </button>
             </Link>
           </div>
-        </div>
+        </header>
 
-        <div className="flex items-center hidden h-full p-8 lg:block rounder-lg lg:w-1/2">
+        <div className="items-center hidden h-full p-8 lg:flex rounder-lg lg:w-1/2">
           <div>
             <img src={fs} alt="A person filing papers" />
           </div>

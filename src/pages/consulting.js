@@ -3,17 +3,17 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const Consulting = () => (
+const Consulting = ({ location }) => (
   <>
     <Layout>
-      <SEO title="Consulting" />
+      <SEO title="Consulting" pathname={location.pathname} />
       <div className="pb-20 text-gray-600 ">
         <div className="mt-12">
           <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl md:text-4xl">
             Your Business is our business
           </h1>
           <div className="mt-4">
-            <p className="font-medium leading-relaxed  md:max-w-3xl">
+            <p className="font-medium leading-relaxed md:max-w-3xl">
               Founded in 2006 by Founder, C.F.O & C.M.A, Zadih Cadyma, CFE
               Consulting Services LLC is a full service consulting firm. We have
               been providing consulting, estate planning and many other business
@@ -47,12 +47,12 @@ const Consulting = () => (
             </p>
 
             <ul className="mt-6 space-y-2 text-base">
-              <div className="flex items-center">
+              <li className="flex items-center">
                 <div>
                   <svg
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    className="w-4 h-4 mr-2 text-indigo-400"
+                    className="w-4 h-4 mr-2 text-indigo-500"
                   >
                     <path
                       fillRule="evenodd"
@@ -61,14 +61,14 @@ const Consulting = () => (
                     ></path>
                   </svg>
                 </div>
-                <li>Business Development</li>
-              </div>
-              <div className="flex items-center">
+                <p>Business Development</p>
+              </li>
+              <li className="flex items-center">
                 <div>
                   <svg
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    className="w-4 h-4 mr-2 text-indigo-400"
+                    className="w-4 h-4 mr-2 text-indigo-500"
                   >
                     <path
                       fillRule="evenodd"
@@ -77,14 +77,14 @@ const Consulting = () => (
                     ></path>
                   </svg>
                 </div>
-                <li>Business Formation</li>
-              </div>
-              <div className="flex items-center">
+                <p>Business Formation</p>
+              </li>
+              <li className="flex items-center">
                 <div>
                   <svg
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    className="w-4 h-4 mr-2 text-indigo-400"
+                    className="w-4 h-4 mr-2 text-indigo-500"
                   >
                     <path
                       fillRule="evenodd"
@@ -93,14 +93,14 @@ const Consulting = () => (
                     ></path>
                   </svg>
                 </div>
-                <li>Educational Tutoring</li>
-              </div>
-              <div className="flex items-center">
+                <p>Educational Tutoring</p>
+              </li>
+              <li className="flex items-center">
                 <div>
                   <svg
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    className="w-4 h-4 mr-2 text-indigo-400"
+                    className="w-4 h-4 mr-2 text-indigo-500"
                   >
                     <path
                       fillRule="evenodd"
@@ -109,14 +109,14 @@ const Consulting = () => (
                     ></path>
                   </svg>
                 </div>
-                <li>Cash Infusion</li>
-              </div>
-              <div className="flex items-center">
+                <p>Cash Infusion</p>
+              </li>
+              <li className="flex items-center">
                 <div>
                   <svg
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    className="w-4 h-4 mr-2 text-indigo-400"
+                    className="w-4 h-4 mr-2 text-indigo-500"
                   >
                     <path
                       fillRule="evenodd"
@@ -125,14 +125,14 @@ const Consulting = () => (
                     ></path>
                   </svg>
                 </div>
-                <li>Financial Planning</li>
-              </div>
-              <div className="flex items-center">
+                <p>Financial Planning</p>
+              </li>
+              <li className="flex items-center">
                 <div>
                   <svg
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    className="w-4 h-4 mr-2 text-indigo-400"
+                    className="w-4 h-4 mr-2 text-indigo-500"
                   >
                     <path
                       fillRule="evenodd"
@@ -141,14 +141,14 @@ const Consulting = () => (
                     ></path>
                   </svg>
                 </div>
-                <li>Grant</li>
-              </div>
-              <div className="flex items-center">
+                <p>Grant</p>
+              </li>
+              <li className="flex items-center">
                 <div>
                   <svg
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    className="w-4 h-4 mr-2 text-indigo-400"
+                    className="w-4 h-4 mr-2 text-indigo-500"
                   >
                     <path
                       fillRule="evenodd"
@@ -157,14 +157,14 @@ const Consulting = () => (
                     ></path>
                   </svg>
                 </div>
-                <li>Import and Export</li>
-              </div>
-              <div className="flex items-center">
+                <p>Import and Export</p>
+              </li>
+              <li className="flex items-center">
                 <div>
                   <svg
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    className="w-4 h-4 mr-2 text-indigo-400"
+                    className="w-4 h-4 mr-2 text-indigo-500"
                   >
                     <path
                       fillRule="evenodd"
@@ -173,14 +173,14 @@ const Consulting = () => (
                     ></path>
                   </svg>
                 </div>
-                <li>Investement and Asset Acquisition</li>
-              </div>
-              <div className="flex items-center">
+                <p>Investement and Asset Acquisition</p>
+              </li>
+              <li className="flex items-center">
                 <div>
                   <svg
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    className="w-4 h-4 mr-2 text-indigo-400"
+                    className="w-4 h-4 mr-2 text-indigo-500"
                   >
                     <path
                       fillRule="evenodd"
@@ -189,14 +189,14 @@ const Consulting = () => (
                     ></path>
                   </svg>
                 </div>
-                <li>Management Strategies</li>
-              </div>
-              <div className="flex items-center">
+                <p>Management Strategies</p>
+              </li>
+              <li className="flex items-center">
                 <div>
                   <svg
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    className="w-4 h-4 mr-2 text-indigo-400"
+                    className="w-4 h-4 mr-2 text-indigo-500"
                   >
                     <path
                       fillRule="evenodd"
@@ -205,14 +205,14 @@ const Consulting = () => (
                     ></path>
                   </svg>
                 </div>
-                <li>Marketing Development and Strategies</li>
-              </div>
-              <div className="flex items-center">
+                <p>Marketing Development and Strategies</p>
+              </li>
+              <li className="flex items-center">
                 <div>
                   <svg
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    className="w-4 h-4 mr-2 text-indigo-400"
+                    className="w-4 h-4 mr-2 text-indigo-500"
                   >
                     <path
                       fillRule="evenodd"
@@ -221,14 +221,14 @@ const Consulting = () => (
                     ></path>
                   </svg>
                 </div>
-                <li>Publishing</li>
-              </div>
-              <div className="flex items-center">
+                <p>Publishing</p>
+              </li>
+              <li className="flex items-center">
                 <div>
                   <svg
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    className="w-4 h-4 mr-2 text-indigo-400"
+                    className="w-4 h-4 mr-2 text-indigo-500"
                   >
                     <path
                       fillRule="evenodd"
@@ -237,14 +237,14 @@ const Consulting = () => (
                     ></path>
                   </svg>
                 </div>
-                <li>Typing Services</li>
-              </div>
-              <div className="flex items-center">
+                <p>Typing Services</p>
+              </li>
+              <li className="flex items-center">
                 <div>
                   <svg
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    className="w-4 h-4 mr-2 text-indigo-400"
+                    className="w-4 h-4 mr-2 text-indigo-500"
                   >
                     <path
                       fillRule="evenodd"
@@ -253,22 +253,25 @@ const Consulting = () => (
                     ></path>
                   </svg>
                 </div>
-                <li>Notary Public Services</li>
-              </div>
-              <p>And much more ...</p>
+                <p>Notary Public Services</p>
+              </li>
+              <li>And much more ...</li>
             </ul>
           </div>
-          <div className="flex items-center justify-center w-full h-16 h-full px-4 py-6 mt-10 bg-indigo-400 rounded shadow-sm">
-            <p className="text-lg font-semibold ">
+          <div className="flex items-center justify-center w-full h-full px-4 py-6 mt-10 bg-indigo-400 rounded shadow-sm">
+            <p className="text-lg font-semibold text-gray-700 ">
               For more information on how we can help you, please{" "}
               <Link
                 to="/contact"
-                className="text-white border-b-2 border-white"
+                className="text-gray-100 border-b-2 border-gray-100"
               >
                 contact
               </Link>{" "}
               us or visit our{" "}
-              <Link to="/wiki" className="text-white border-b-2 border-white">
+              <Link
+                to="/wiki"
+                className="text-gray-100 border-b-2 border-gray-100"
+              >
                 wiki
               </Link>{" "}
               page.

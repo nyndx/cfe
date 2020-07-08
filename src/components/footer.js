@@ -5,32 +5,39 @@ import thumbtack from "../images/thumbtack.svg"
 import { Link } from "gatsby"
 
 const Footer = () => (
-  <footer className="font-sans text-gray-500 bg-gray-100 ">
+  <footer className="font-sans text-gray-700 bg-gray-100 ">
     <div className="container px-4 pb-8 mx-auto sm:px-8">
       <div className="justify-between py-16 space-y-5 sm:space-y-0 sm:flex">
         <div className="w-full mr-6 sm:w-1/4">
-          <h3 className="text-sm font-medium text-gray-600 uppercase">site</h3>
-          <ul className="mt-4 space-y-4 text-sm">
-            <Link to="/accounting">
-              <li className="mb-2 hover:text-indigo-400">Accounting </li>
-            </Link>
-            <Link to="/consulting">
-              <li className="mb-2 hover:text-indigo-400">Consulting</li>
-            </Link>
-            <Link to="/contact">
-              <li className="mb-2 hover:text-indigo-400">Contact us</li>
-            </Link>
-            <Link to="/about_us">
-              <li className="mb-2 hover:text-indigo-400">About us</li>
-            </Link>
-            <Link to="/wiki">
-              <li className="mb-2 hover:text-indigo-400">Wiki</li>
-            </Link>
-            <Link to="/social">
-              <li className="mb-2 hover:text-indigo-400">
-                Social responsibility
-              </li>
-            </Link>
+          <h2 className="text-sm font-medium uppercase">site</h2>
+          <ul className="mt-4 space-y-4 text-sm text-gray-600">
+            <li className="mb-2 hover:text-indigo-500">
+              <Link to="/accounting">Accounting</Link>
+            </li>
+            <li className="mb-2 hover:text-indigo-500">
+              <Link to="/consulting">Consulting</Link>
+            </li>
+            <li className="mb-2 hover:text-indigo-500">
+              <Link to="/contact">Contact us</Link>
+            </li>
+            <li className="mb-2 hover:text-indigo-500">
+              <Link to="/about_us">About us</Link>
+            </li>
+            <li className="mb-2 hover:text-indigo-500">
+              <Link to="/wiki">Wiki</Link>
+            </li>
+            <li className="mb-2 hover:text-indigo-500">
+              <Link to="/social">Social responsibility</Link>
+            </li>
+            <li className="mb-2 hover:text-indigo-500">
+              <a
+                href="https://cfetaxservices.securefilepro.com/connect/#/login"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                File here
+              </a>
+            </li>
           </ul>
         </div>
         {/* <div>
@@ -63,7 +70,7 @@ const Footer = () => (
         </div>
       </div>
       <div>
-        <p className="text-sm font-thin">
+        <p className="text-sm font-thin text-gray-700">
           &copy; {new Date().getFullYear().toString()} CFE Tax Services
         </p>
       </div>

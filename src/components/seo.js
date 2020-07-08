@@ -10,8 +10,8 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
-  const { site } = useStaticQuery(
+function SEO({ description, lang, meta, title, pathname }) {
+  const { site, imageSharp } = useStaticQuery(
     graphql`
       query {
         site {
@@ -19,14 +19,26 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            siteUrl
           }
+        }
+        imageSharp(id: { eq: "14aa3673-8b9c-5278-86bf-6798dfcb304d" }) {
+          fixed {
+            height
+            width
+            src
+          }
+          id
         }
       }
     `
   )
 
   const metaDescription = description || site.siteMetadata.description
-
+  const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
+  const image = `${site.siteMetadata.siteUrl}${imageSharp.fixed.src}`
+  console.log(image)
+  console.log(pathname)
   return (
     <Helmet
       htmlAttributes={{
@@ -34,6 +46,16 @@ function SEO({ description, lang, meta, title }) {
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
+      link={
+        canonical
+          ? [
+              {
+                rel: "canonical",
+                href: canonical,
+              },
+            ]
+          : []
+      }
       meta={[
         {
           name: `description`,
@@ -67,8 +89,36 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ].concat(meta)}
-    />
+      ]
+        .concat(
+          image
+            ? [
+                {
+                  property: "og:image",
+                  content: image,
+                },
+                {
+                  property: "og:image:width",
+                  content: imageSharp.fixed.width,
+                },
+                {
+                  property: "og:image:height",
+                  content: imageSharp.fixed.height,
+                },
+                {
+                  name: "twitter:card",
+                  content: "summary_large_image",
+                },
+              ]
+            : [
+                {
+                  name: "twitter:card",
+                  content: "summary",
+                },
+              ]
+        )
+        .concat(meta)}
+    ></Helmet>
   )
 }
 

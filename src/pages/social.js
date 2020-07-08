@@ -9,10 +9,10 @@ const SpanWrap = props => (
   </span>
 )
 
-const Social = () => (
+const Social = ({ location }) => (
   <>
     <Layout>
-      <SEO title="About Us" />
+      <SEO title="About Us" pathname={location.pathname} />
       <div className="pb-20 text-gray-600 md:text-lg">
         <div className="mt-12">
           <h1 className="text-xl font-semibold tracking-tight text-yellow-500 sm:text-2xl md:text-3xl">

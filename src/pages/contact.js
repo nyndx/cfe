@@ -4,14 +4,12 @@ import SEO from "../components/seo"
 import { useForm } from "react-hook-form"
 
 const Error = ({ children, ...rest }) => (
-  <span className="mt-2 text-xs font-light text-red-400" {...rest}>
+  <span className="mt-2 text-xs font-light text-red-500" {...rest}>
     {children}
   </span>
 )
-const Contact = () => {
-  const { register, handleSubmit, errors, formState } = useForm({
-    mode: "onBlur",
-  })
+const Contact = ({ location }) => {
+  const { register, handleSubmit, errors, formState } = useForm()
   const [msg, setMsg] = useState(null)
 
   useEffect(() => {
@@ -38,10 +36,11 @@ const Contact = () => {
 
     e.target.reset()
   }
+
   return (
     <>
       <Layout>
-        <SEO title="Contact" />
+        <SEO title="Contact" pathname={location.pathname} />
         <div className="h-full py-12 pb-20 text-gray-600">
           <div className="mb-4 space-y-2 text-center">
             <h2 className="text-2xl font-medium leading-none tracking-tight text-center md:text-4xl">
@@ -168,7 +167,7 @@ const Contact = () => {
                       <li>
                         <label htmlFor="Phone">Phone: </label>
                         <a
-                          className="text-indigo-400 underline"
+                          className="text-indigo-500 underline"
                           href="tel:+01-704-713-6667"
                           name="Phone"
                         >
@@ -179,14 +178,14 @@ const Contact = () => {
                         <label htmlFor="Email">Email: </label>
                         <div className="inline-block ml-2">
                           <a
-                            className="text-indigo-400 underline"
+                            className="text-indigo-500 underline"
                             href="mailto:info@cfetaxservices.com"
                             name="Email"
                           >
                             info@cfetaxservices.com
                           </a>
                           <a
-                            className="block text-indigo-400 underline"
+                            className="block text-indigo-500 underline"
                             href="mailto:zc@cfetaxservices.com"
                             name="Email"
                           >
@@ -201,7 +200,7 @@ const Contact = () => {
                       <li>
                         <label htmlFor="Phone">Phone: </label>
                         <a
-                          className="text-indigo-400 underline"
+                          className="text-indigo-500 underline"
                           href="tel:+01-704-713-6667"
                           name="Phone"
                         >
@@ -212,7 +211,7 @@ const Contact = () => {
                         <label htmlFor="Email">Email: </label>
                         <div className="inline-block ml-2">
                           <a
-                            className="text-indigo-400 underline"
+                            className="text-indigo-500 underline"
                             href="mailto:info@cfetaxservices.com"
                             name="Email"
                           >
@@ -232,7 +231,7 @@ const Contact = () => {
                       <li>
                         <label htmlFor="Phone">Phone: </label>
                         <a
-                          className="text-indigo-400 underline"
+                          className="text-indigo-500 underline"
                           href="tel:+01-617-784-1604"
                           name="Phone"
                         >
@@ -243,14 +242,14 @@ const Contact = () => {
                         <label htmlFor="Email">Email: </label>
                         <div className="inline-block ml-2">
                           <a
-                            className="text-indigo-400 underline"
+                            className="text-indigo-500 underline"
                             href="mailto:info@cfetaxservices.com"
                             name="Email"
                           >
                             info@cfetaxservices.com
                           </a>
                           <a
-                            className="block text-indigo-400 underline "
+                            className="block text-indigo-500 underline "
                             href="mailto:zc@cfetaxservices.com"
                             name="Email"
                           >

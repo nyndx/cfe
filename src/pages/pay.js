@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 import { useState } from "react"
 import Paypal from "../components/paypal"
 
-const Pricing = () => {
+const Pricing = ({ location }) => {
   const [price, setPrice] = useState(0)
   const [toggle, setToggle] = useState(false)
 
@@ -29,25 +29,27 @@ const Pricing = () => {
   return (
     <>
       <Layout>
-        <SEO title="Pricing" />
+        <SEO title="Pricing" pathname={location.pathname} />
         <div className="py-12 pb-20 text-gray-600 ">
           <div className="mb-10">
-            <div className="max-w-xs pb-6 m-auto bg-white rounded shadow-lg min-h-40vh">
+            <div className="max-w-xs pb-6 m-auto bg-white rounded shadow-lg ">
               <div className="h-full bg-gray-300">
                 <p className="py-6 font-medium tracking-widest text-center uppercase ">
                   amout to pay
                 </p>
               </div>
               <form className="px-4 py-6 space-y-4 text-base bg-gray-100 b ">
-                <input
-                  className="w-full px-4 py-2 border-2 border-indigo-500 rounded-md"
-                  type="number"
-                  name="amount"
-                  id="amount"
-                  value={price}
-                  onChange={e => setPrice(e.target.value)}
-                  placeholder="Amount to pay"
-                />
+                <label htmlFor="amount">
+                  <input
+                    className="w-full px-4 py-2 border-2 border-indigo-500 rounded-md"
+                    type="number"
+                    name="amount"
+                    id="amount"
+                    value={price}
+                    onChange={e => setPrice(e.target.value)}
+                    placeholder="Amount to pay"
+                  />
+                </label>
               </form>
               <div className="flex flex-col items-center h-full bg-white">
                 <div className="px-4 py-6 ">
@@ -98,17 +100,17 @@ const Pricing = () => {
                     </svg>
                   </button>
                 </span>
-                <div className="flex justify-center px-6 mt-8">
+                <div className="flex justify-center px-6 mt-12 ">
                   <Paypal product={product} />
                 </div>
               </div>
             </div>
           )}
-          <div className="flex justify-center ">
-            <p className="text-center md:text-2xl">
+          <div className="flex justify-center mt-24">
+            <p className="text-center md:text-xl">
               For more information or for personal and tailored services please{" "}
               <Link
-                className="pb-1 font-semibold text-indigo-400 border-b-2 border-indigo-400 hover:text-indigo-500"
+                className="pb-1 font-semibold text-indigo-500 border-b-2 border-indigo-500 hover:text-indigo-400"
                 to="/contact"
               >
                 contact us.

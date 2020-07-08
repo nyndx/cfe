@@ -1,8 +1,13 @@
+console.log(process.env.NODE_ENV)
+
 module.exports = {
   siteMetadata: {
     title: `CFE Tax Services`,
-    description: `Quality & Accurate
-tax preparation services.`,
+    description: `We offer access to trained and experienced tax preparers year round, who are dedicated to getting the necessary deductions,tax credits, write-offs, rebates, and other methods that are entitled to our clients in an accurate manner.`,
+    siteUrl:
+      process.env.NODE_ENV === "development"
+        ? `http://localhost:8000`
+        : `http://cfetaxservices.com`,
     author: `@nynd_x`,
   },
   plugins: [
@@ -45,8 +50,8 @@ tax preparation services.`,
         name: `CFE tax services`,
         short_name: `CFE tax`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#FFFFFF`,
+        theme_color: `#7F9CF5`,
         display: `minimal-ui`,
         icon: `src/images/cfeicon.png`, // This path is relative to the root of the site.
       },

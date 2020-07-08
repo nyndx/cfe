@@ -3,10 +3,10 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+const IndexPage = ({ location }) => (
   <>
     <Layout hidebg={false}>
-      <SEO title="Home"></SEO>
+      <SEO title="Home" pathname={location.pathname}></SEO>
       <div className="pb-20">
         <div className="flex flex-col">
           <div className="py-2 md:max-w-3/4">
@@ -42,7 +42,7 @@ const IndexPage = () => (
             </p>
             <p>
               This year, try accurate results and financial peace of mind. -
-              <span className="pb-1 text-base font-semibold border-b-2 border-indigo-400">
+              <span className="pb-1 text-base font-semibold border-b-2 border-indigo-500">
                 <Link to="/contact">Try a CFE Professional.</Link>
               </span>
             </p>
@@ -65,22 +65,22 @@ const IndexPage = () => (
               <p>Let us help you earn your maximum refund.</p>
             </div>
 
-            <div className="markdown sm:flex sm:items-start sm:justify-between">
-              <p className="sm:max-w-1/4">
+            <div className="markdown md:flex md:items-start md:justify-between">
+              <p className="md:max-w-1/4">
                 {" "}
-                <span className="mr-1 text-2xl font-semibold text-indigo-400 ">
+                <span className="mr-1 text-2xl font-semibold text-indigo-500 ">
                   01.
                 </span>
                 Gain access to qualified and certified CPAs.
               </p>
-              <p className="sm:max-w-1/4">
-                <span className="mr-1 text-2xl font-semibold text-indigo-400">
+              <p className="md:max-w-1/4">
+                <span className="mr-1 text-2xl font-semibold text-indigo-500">
                   02.
                 </span>
                 Get a price for your specific needs.
               </p>
-              <p className="sm:max-w-1/4">
-                <span className="mr-1 text-2xl font-semibold text-indigo-400">
+              <p className="md:max-w-1/4">
+                <span className="mr-1 text-2xl font-semibold text-indigo-500">
                   03.
                 </span>
                 Email, scan, or fax your W2 to our office and we can file your
@@ -89,15 +89,14 @@ const IndexPage = () => (
               </p>
             </div>
             <div className="mt-6">
-              <span className="pb-1 text-xl font-semibold text-indigo-400 border-b-2 border-indigo-400 hover:text-indigo-500">
-                <a
-                  href="https://cfetaxservices.securefilepro.com/connect/#/login"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  File here
-                </a>
-              </span>
+              <a
+                className="pb-1 text-xl font-semibold text-indigo-500 border-b-2 border-indigo-500 hover:border-indigo-400 hover:text-indigo-400"
+                href="https://cfetaxservices.securefilepro.com/connect/#/login"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                File here
+              </a>
             </div>
           </div>
         </div>

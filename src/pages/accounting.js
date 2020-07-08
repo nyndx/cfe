@@ -3,10 +3,10 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const Accounting = () => (
+const Accounting = ({ location }) => (
   <>
     <Layout>
-      <SEO title="Accounting" />
+      <SEO title="Accounting" pathname={location.pathname} />
       <div className="pb-20 text-gray-600">
         <div className="mt-12">
           <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl md:text-4xl">
@@ -51,12 +51,12 @@ const Accounting = () => (
               Get daily, weekly, monthly or annual services for:
             </p>
             <ul className="mt-6 space-y-2 text-base">
-              <div className="flex items-center">
+              <li className="flex items-center">
                 <div>
                   <svg
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    className="w-4 h-4 mr-2 text-indigo-400"
+                    className="w-4 h-4 mr-2 text-indigo-500"
                   >
                     <path
                       fillRule="evenodd"
@@ -65,14 +65,14 @@ const Accounting = () => (
                     ></path>
                   </svg>
                 </div>
-                <li>Accounting, Payroll Services,Billing, Auditing</li>
-              </div>
-              <div className="flex items-center">
+                <p>Accounting, Payroll Services,Billing, Auditing</p>
+              </li>
+              <li className="flex items-center">
                 <div>
                   <svg
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    className="w-4 h-4 mr-2 text-indigo-400"
+                    className="w-4 h-4 mr-2 text-indigo-500"
                   >
                     <path
                       fillRule="evenodd"
@@ -81,14 +81,14 @@ const Accounting = () => (
                     ></path>
                   </svg>
                 </div>
-                <li>Business Formation And Restructuring</li>
-              </div>
-              <div className="flex items-center">
+                <p>Business Formation And Restructuring</p>
+              </li>
+              <li className="flex items-center">
                 <div>
                   <svg
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    className="w-4 h-4 mr-2 text-indigo-400"
+                    className="w-4 h-4 mr-2 text-indigo-500"
                   >
                     <path
                       fillRule="evenodd"
@@ -97,14 +97,14 @@ const Accounting = () => (
                     ></path>
                   </svg>
                 </div>
-                <li>QuickBooks Assistance & Training </li>
-              </div>
-              <div className="flex items-center">
+                <p>QuickBooks Assistance & Training </p>
+              </li>
+              <li className="flex items-center">
                 <div>
                   <svg
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    className="w-4 h-4 mr-2 text-indigo-400"
+                    className="w-4 h-4 mr-2 text-indigo-500"
                   >
                     <path
                       fillRule="evenodd"
@@ -113,14 +113,14 @@ const Accounting = () => (
                     ></path>
                   </svg>
                 </div>
-                <li>Cash Flow And Budgeting Analysis</li>
-              </div>
-              <div className="flex items-center">
+                <p>Cash Flow And Budgeting Analysis</p>
+              </li>
+              <li className="flex items-center">
                 <div>
                   <svg
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    className="w-4 h-4 mr-2 text-indigo-400"
+                    className="w-4 h-4 mr-2 text-indigo-500"
                   >
                     <path
                       fillRule="evenodd"
@@ -129,14 +129,14 @@ const Accounting = () => (
                     ></path>
                   </svg>
                 </div>
-                <li>Business Planning</li>
-              </div>
-              <div className="flex items-center">
+                <p>Business Planning</p>
+              </li>
+              <li className="flex items-center">
                 <div>
                   <svg
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    className="w-4 h-4 mr-2 text-indigo-400"
+                    className="w-4 h-4 mr-2 text-indigo-500"
                   >
                     <path
                       fillRule="evenodd"
@@ -145,14 +145,14 @@ const Accounting = () => (
                     ></path>
                   </svg>
                 </div>
-                <li>Taxes</li>
-              </div>
-              <div className="flex items-center">
+                <p>Taxes</p>
+              </li>
+              <li className="flex items-center">
                 <div>
                   <svg
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    className="w-4 h-4 mr-2 text-indigo-400"
+                    className="w-4 h-4 mr-2 text-indigo-500"
                   >
                     <path
                       fillRule="evenodd"
@@ -161,14 +161,14 @@ const Accounting = () => (
                     ></path>
                   </svg>
                 </div>
-                <li>Cash Infusion</li>
-              </div>
-              <div className="flex items-center">
+                <p>Cash Infusion</p>
+              </li>
+              <li className="flex items-center">
                 <div>
                   <svg
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    className="w-4 h-4 mr-2 text-indigo-400"
+                    className="w-4 h-4 mr-2 text-indigo-500"
                   >
                     <path
                       fillRule="evenodd"
@@ -177,14 +177,14 @@ const Accounting = () => (
                     ></path>
                   </svg>
                 </div>
-                <li>Investement and Asset Acquisition</li>
-              </div>
-              <div className="flex items-center">
+                <p>Investement and Asset Acquisition</p>
+              </li>
+              <li className="flex items-center">
                 <div>
                   <svg
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    className="w-4 h-4 mr-2 text-indigo-400"
+                    className="w-4 h-4 mr-2 text-indigo-500"
                   >
                     <path
                       fillRule="evenodd"
@@ -193,14 +193,14 @@ const Accounting = () => (
                     ></path>
                   </svg>
                 </div>
-                <li>Bookkeeping</li>
-              </div>
-              <div className="flex items-center">
+                <p>Bookkeeping</p>
+              </li>
+              <li className="flex items-center">
                 <div>
                   <svg
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    className="w-4 h-4 mr-2 text-indigo-400"
+                    className="w-4 h-4 mr-2 text-indigo-500"
                   >
                     <path
                       fillRule="evenodd"
@@ -209,17 +209,17 @@ const Accounting = () => (
                     ></path>
                   </svg>
                 </div>
-                <li>
+                <p>
                   Cost Accounting,Retail Accounting,Construction
                   Accounting,Non-Profit Accounting
-                </li>
-              </div>
-              <div className="flex items-center">
+                </p>
+              </li>
+              <li className="flex items-center">
                 <div>
                   <svg
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    className="w-4 h-4 mr-2 text-indigo-400"
+                    className="w-4 h-4 mr-2 text-indigo-500"
                   >
                     <path
                       fillRule="evenodd"
@@ -228,14 +228,14 @@ const Accounting = () => (
                     ></path>
                   </svg>
                 </div>
-                <li>Fixed Asset</li>
-              </div>
-              <div className="flex items-center">
+                <p>Fixed Asset</p>
+              </li>
+              <li className="flex items-center">
                 <div>
                   <svg
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    className="w-4 h-4 mr-2 text-indigo-400"
+                    className="w-4 h-4 mr-2 text-indigo-500"
                   >
                     <path
                       fillRule="evenodd"
@@ -244,14 +244,14 @@ const Accounting = () => (
                     ></path>
                   </svg>
                 </div>
-                <li>Real Estate</li>
-              </div>
-              <div className="flex items-center">
+                <p>Real Estate</p>
+              </li>
+              <li className="flex items-center">
                 <div>
                   <svg
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    className="w-4 h-4 mr-2 text-indigo-400"
+                    className="w-4 h-4 mr-2 text-indigo-500"
                   >
                     <path
                       fillRule="evenodd"
@@ -260,14 +260,14 @@ const Accounting = () => (
                     ></path>
                   </svg>
                 </div>
-                <li>Business Tax Preparation</li>
-              </div>
-              <div className="flex items-center">
+                <p>Business Tax Preparation</p>
+              </li>
+              <li className="flex items-center">
                 <div>
                   <svg
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    className="w-4 h-4 mr-2 text-indigo-400"
+                    className="w-4 h-4 mr-2 text-indigo-500"
                   >
                     <path
                       fillRule="evenodd"
@@ -276,22 +276,25 @@ const Accounting = () => (
                     ></path>
                   </svg>
                 </div>
-                <li>Accounts Receivable & Payable</li>
-              </div>
-              <p>And much more ...</p>
+                <p>Accounts Receivable & Payable</p>
+              </li>
+              <li>And much more ...</li>
             </ul>
           </div>
-          <div className="flex items-center justify-center w-full h-16 h-full px-4 py-6 mt-10 bg-indigo-400 rounded shadow-sm">
-            <p className="text-lg font-semibold ">
+          <div className="flex items-center justify-center w-full h-full px-4 py-6 mt-10 bg-indigo-400 rounded shadow-sm">
+            <p className="text-lg font-semibold text-gray-700 ">
               For more information on how we can help you, please{" "}
               <Link
                 to="/contact"
-                className="text-white border-b-2 border-white"
+                className="text-gray-100 border-b-2 border-gray-100"
               >
                 contact
               </Link>{" "}
               us or visit our{" "}
-              <Link to="/wiki" className="text-white border-b-2 border-white">
+              <Link
+                to="/wiki"
+                className="text-gray-100 border-b-2 border-gray-100"
+              >
                 wiki
               </Link>{" "}
               page.

@@ -56,7 +56,7 @@ const FaqLayout = ({ children }) => {
           </Link>
         ))}
       </div>
-      <div className="relative mx-auto overflow-y-auto sm:w-3/4 sm:max-w-2xl">
+      <div className="relative mx-auto overflow-y-auto md:w-3/4 sm:max-w-2xl">
         <div className="absolute right-0 z-30 flex items-center justify-center p-2 mt-4 ml-6 bg-indigo-400 rounded-full shadow-lg bottom-6 md:hidden">
           {showSidebar ? (
             <button
