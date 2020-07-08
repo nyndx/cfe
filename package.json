@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "prettier": "2.0.5",
+    "tailwind-heropatterns": "0.0.8",
     "tailwindcss": "^1.4.6"
   },
   "keywords": [

@@ -11,7 +11,7 @@ import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
 function SEO({ description, lang, meta, title, pathname }) {
-  const { site, imageSharp } = useStaticQuery(
+  const { site, allImageSharp } = useStaticQuery(
     graphql`
       query {
         site {
@@ -22,23 +22,31 @@ function SEO({ description, lang, meta, title, pathname }) {
             siteUrl
           }
         }
-        imageSharp(id: { eq: "14aa3673-8b9c-5278-86bf-6798dfcb304d" }) {
-          fixed {
-            height
-            width
-            src
+        allImageSharp(
+          filter: { id: { eq: "14aa3673-8b9c-5278-86bf-6798dfcb304d" } }
+        ) {
+          edges {
+            node {
+              fixed {
+                src
+                height
+                width
+              }
+              id
+            }
           }
-          id
         }
       }
     `
   )
 
+  const img = allImageSharp.edges[0].node.fixed
+  console.log(img)
+
   const metaDescription = description || site.siteMetadata.description
   const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
-  const image = `${site.siteMetadata.siteUrl}${imageSharp.fixed.src}`
-  console.log(image)
-  console.log(pathname)
+  const image = `${site.siteMetadata.siteUrl}${img.src}`
+
   return (
     <Helmet
       htmlAttributes={{
@@ -91,7 +99,7 @@ function SEO({ description, lang, meta, title, pathname }) {
         },
       ]
         .concat(
-          image
+          img
             ? [
                 {
                   property: "og:image",
@@ -99,11 +107,11 @@ function SEO({ description, lang, meta, title, pathname }) {
                 },
                 {
                   property: "og:image:width",
-                  content: imageSharp.fixed.width,
+                  content: img.width,
                 },
                 {
                   property: "og:image:height",
-                  content: imageSharp.fixed.height,
+                  content: img.height,
                 },
                 {
                   name: "twitter:card",
