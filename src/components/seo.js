@@ -9,7 +9,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import cfeicon from "../images/cfeicon.png"
 
 function SEO({ description, lang, meta, title, pathname }) {
   const { site } = useStaticQuery(
@@ -21,6 +20,7 @@ function SEO({ description, lang, meta, title, pathname }) {
             description
             author
             siteUrl
+            image
           }
         }
       }
@@ -29,7 +29,7 @@ function SEO({ description, lang, meta, title, pathname }) {
 
   const metaDescription = description || site.siteMetadata.description
   const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
-  const image = `${cfeicon}`
+  const image = `${site.siteMetadata.image}`
 
   return (
     <Helmet
@@ -60,6 +60,10 @@ function SEO({ description, lang, meta, title, pathname }) {
         {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: `og:image`,
+          content: image,
         },
         {
           property: `og:type`,
