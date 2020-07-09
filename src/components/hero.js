@@ -28,7 +28,7 @@ const Hero = ({ hide }) => {
                 Get started
               </button>
             </Link>
-            <Link to="/pricing">
+            <Link to="/pay">
               <button className="px-4 py-2 mb-4 text-xs font-semibold text-gray-700 bg-white rounded-full shadow-lg hover:bg-gray-100 sm:text-base">
                 Make a payment
               </button>

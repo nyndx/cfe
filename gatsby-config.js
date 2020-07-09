@@ -8,7 +8,9 @@ module.exports = {
       process.env.NODE_ENV === "development"
         ? `http://localhost:8000`
         : `https://gifted-swanson-7b0c05.netlify.app`,
-    author: `@nynd_x`,
+    twitter: `@nynd_x`,
+    author: "Max Ndundula",
+    image: "/cfeicon.png",
   },
   plugins: [
     `gatsby-plugin-postcss`,
