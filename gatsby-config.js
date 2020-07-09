@@ -7,7 +7,7 @@ module.exports = {
     siteUrl:
       process.env.NODE_ENV === "development"
         ? `http://localhost:8000`
-        : `http://cfetaxservices.com`,
+        : `https://gifted-swanson-7b0c05.netlify.app`,
     author: `@nynd_x`,
   },
   plugins: [
