@@ -9,9 +9,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import cfeicon from "../images/cfeicon.png"
 
 function SEO({ description, lang, meta, title, pathname }) {
-  const { site, allImageSharp } = useStaticQuery(
+  const { site } = useStaticQuery(
     graphql`
       query {
         site {
@@ -22,30 +23,13 @@ function SEO({ description, lang, meta, title, pathname }) {
             siteUrl
           }
         }
-        allImageSharp(
-          filter: { id: { eq: "14aa3673-8b9c-5278-86bf-6798dfcb304d" } }
-        ) {
-          edges {
-            node {
-              fixed {
-                src
-                height
-                width
-              }
-              id
-            }
-          }
-        }
       }
     `
   )
 
-  const img = allImageSharp.edges[0].node.fixed
-  console.log(img)
-
   const metaDescription = description || site.siteMetadata.description
   const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
-  const image = `${site.siteMetadata.siteUrl}${img.src}`
+  const image = `${cfeicon}`
 
   return (
     <Helmet
@@ -97,35 +81,7 @@ function SEO({ description, lang, meta, title, pathname }) {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ]
-        .concat(
-          img
-            ? [
-                {
-                  property: "og:image",
-                  content: image,
-                },
-                {
-                  property: "og:image:width",
-                  content: img.width,
-                },
-                {
-                  property: "og:image:height",
-                  content: img.height,
-                },
-                {
-                  name: "twitter:card",
-                  content: "summary_large_image",
-                },
-              ]
-            : [
-                {
-                  name: "twitter:card",
-                  content: "summary",
-                },
-              ]
-        )
-        .concat(meta)}
+      ].concat(meta)}
     ></Helmet>
   )
 }
