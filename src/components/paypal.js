@@ -9,6 +9,11 @@ function Paypal({ product }) {
   const [loaded, errors] = useScript(
     `https://www.paypal.com/sdk/js?client-id=AUBGAJKS0hYtT64DAPeAUi3EiijM6tLWSzDIYrOzPFm39XJusa_P9afYXB-uXwKiRucYlWXNcdVf-hVD&currency=USD`
   )
+  const formatter = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    minimumFractionDigits: 2,
+  })
 
   useEffect(() => {
     if (loaded) {
@@ -28,7 +33,7 @@ function Paypal({ product }) {
                     description: product.description,
                     amount: {
                       currency_code: "USD",
-                      value: Number(product.price),
+                      value: Number.parseFloat(product.price),
                     },
                   },
                 ],
@@ -54,7 +59,8 @@ function Paypal({ product }) {
       <div className="h-full px-4 py-6 bg-white rounded-md">
         <h1 className="text-lg text-center">
           Thank your for your payment of{" "}
-          <span className="font-medium">{product.price}</span>!
+          <span className="font-medium">{formatter.format(product.price)}</span>
+          !
         </h1>
       </div>
     )
@@ -72,7 +78,7 @@ function Paypal({ product }) {
           <h2 className="w-full text-lg font-medium text-center ">
             <span className="text-xl font-medium ">
               {" "}
-              You're paying ${product.price}
+              You're paying {formatter.format(product.price)}
             </span>
           </h2>
 
