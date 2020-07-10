@@ -6,16 +6,16 @@ import { useState } from "react"
 import Paypal from "../components/paypal"
 
 const Pricing = ({ location }) => {
-  const [price, setPrice] = useState(0)
+  const [price, setPrice] = useState("")
   const [toggle, setToggle] = useState(false)
 
   const closeModal = () => {
     setToggle(false)
-    setPrice(0)
+    setPrice("")
   }
 
   const product = {
-    price: Number(price),
+    price: Number.parseFloat(Number(price)).toFixed(2),
     name: "Tax Services",
     description: "Tax payment",
   }
@@ -54,7 +54,7 @@ const Pricing = ({ location }) => {
               <div className="flex flex-col items-center h-full bg-white">
                 <div className="px-4 py-6 ">
                   <span className="text-xl italic font-semibold ">
-                    {formatter.format(product.price)}
+                    {formatter.format(price)}
                   </span>
                 </div>
                 <div className="rounded-lg outline-none ">
@@ -74,38 +74,40 @@ const Pricing = ({ location }) => {
               </div>
             </div>
           </div>
-          {toggle && (
-            <div
-              className={`absolute inset-0  items-center justify-center bg-black bg-opacity-75 overflow-scroll ${
-                toggle ? "flex" : "hidden"
-              }`}
-            >
-              <div className="flex flex-col w-full h-full ">
-                <span className="self-end mt-6 mr-6">
-                  <button
-                    type="button"
-                    className=""
-                    onClick={() => closeModal()}
-                  >
-                    <svg
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      className="w-6 h-6 text-gray-100"
+          <div>
+            {toggle && (
+              <div
+                className={`absolute inset-0  items-center justify-center bg-black bg-opacity-75 overflow-scroll max-w-3xl mx-auto ${
+                  toggle ? "flex" : "hidden"
+                }`}
+              >
+                <div className="flex flex-col w-full h-full ">
+                  <span className="self-end mt-6 mr-6">
+                    <button
+                      type="button"
+                      className=""
+                      onClick={() => closeModal()}
                     >
-                      <path
-                        fillRule="evenodd"
-                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                  </button>
-                </span>
-                <div className="flex justify-center px-6 mt-12 ">
-                  <Paypal product={product} />
+                      <svg
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        className="w-6 h-6 text-gray-100"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          clipRule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                  </span>
+                  <div className="flex justify-center px-6 mt-12 ">
+                    <Paypal product={product} />
+                  </div>
                 </div>
               </div>
-            </div>
-          )}
+            )}
+          </div>
           <div className="flex justify-center mt-24">
             <p className="text-center md:text-xl">
               For more information or for personal and tailored services please{" "}
